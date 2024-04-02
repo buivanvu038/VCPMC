@@ -1,0 +1,113 @@
+.background-login {
+    background-color: #1e1e2e;
+    min-height: 100vh; // Sử dụng min-height để đảm bảo nội dung trải dài đủ để lấp đầy toàn bộ chiều cao của màn hình
+    display: flex; // Sử dụng flexbox để căn giữa nội dung
+    justify-content: center; // Căn giữa theo chiều ngang
+    align-items: center; // Căn giữa theo chiều dọc
+
+    .imglogo{
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin-left: 60px;
+      display: block;
+      margin-top: -60%;
+      margin-bottom: 30%;
+
+    }
+    .imglang{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+      margin-bottom: -4px;
+      margin-left: 2px;
+        
+    }
+    .imgeng{
+        height: 1px;
+        width: 1px;
+    }
+    .text{
+        color: #ffff;
+    }
+    .styleInput {
+        height: 40px;
+        width: 350px;
+        border-radius: 10px;
+        background-color: #1e1e2e !important;
+        color: #ffff;
+    }
+    .textlogin{
+        color: #ffff;
+        text-align: center;
+        margin-top: -60px;
+        margin-bottom: 40px;
+
+    }
+    .textinput{
+        color: #ffff;
+        opacity: 0.5;
+    }
+    .checkboxpass{
+        margin-left: -50%;
+        color: #ffff    ;
+    }
+    .btnlogin {
+        background-color: #FF7506;
+        border-style: none;
+        height: 46px;
+        width: 190px;
+        color: #fff;
+        transition: background-color 0.3s, color 0.1s; /* Add transition for smooth effect */
+        border-radius: 4px;
+    }
+    
+    .btnlogin:hover {
+        background-color: #f38135; /* Darker shade of orange */
+      
+    }
+    /* CSS */
+.selectLang-small .ant-select-selector {
+    width: 154px;
+    height: 40px;
+    background-color: #1e1e2e;
+    color: #fff;
+    margin-left: 250%;
+    margin-top: -200px;
+
+  }
+  .lang{
+    margin-top: -100px;
+  }
+ 
+  }
+  @media only screen and (max-width: 768px) {
+    .background-login {
+      
+        .imglogo {
+            height: 140px;
+            width: 140px;
+            margin-top: 20%;
+            margin-bottom: 20%;
+            margin-left:100px;
+        }
+        .checkboxpass{
+
+            margin-left: -100px;
+        }
+        .selectLang-small .ant-select-selector {
+            width: 144px;
+            height: 40px;
+            background-color: #1e1e2e;
+            color: #fff;
+            margin-left: 4%;
+            margin-top: 100px;
+            margin-right: 1px;
+
+        
+          }
+          .lang{
+            margin-top: -100px;
+          }
+     
+    }}
