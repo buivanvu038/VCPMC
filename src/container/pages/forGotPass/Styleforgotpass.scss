@@ -5,7 +5,7 @@
     justify-content: center; // Căn giữa theo chiều ngang
     align-items: center; // Căn giữa theo chiều dọc
 
-    .imglogo{
+    .imglogoforgot{
         height: 200px;
         width: 200px;
         border-radius: 50%;
@@ -13,7 +13,9 @@
       display: block;
       margin-top: -60%;
       margin-bottom: 30%;
-        margin-left: 70px;
+      margin-left: 30%;
+
+    
     }
     .imglang{
         height: 20px;
@@ -30,9 +32,9 @@
     .text{
         color: #ffff;
     }
-    .styleInput {
+    .styleInputforgotpass {
         height: 40px;
-        width: 350px;
+        width: 500px;
         border-radius: 10px;
         background-color: #1e1e2e !important;
         color: #ffff;
@@ -53,7 +55,7 @@
         margin-left: -50%;
         color: #ffff    ;
     }
-    .btnlogin {
+    .btnloginforgot {
         background-color: #FF7506;
         border-style: none;
         height: 46px;
@@ -61,22 +63,27 @@
         color: #fff;
         transition: background-color 0.3s, color 0.1s; /* Add transition for smooth effect */
         border-radius: 4px;
+        margin-left: 30px;
     }
     
-    .btnlogin:hover {
-        background-color: #f38135; /* Darker shade of orange */
-      
+    .btnloginforgot:hover {
+        background-color: #f38135; /* Darker shade of orange */     
+    }
+    .textspan{
+        color: #ffff;
+
     }
     /* CSS */
-.selectLang-small .ant-select-selector {
+.selectLang-smallforgot .ant-select-selector {
     width: 154px;
     height: 40px;
     background-color: #1e1e2e;
     color: #fff;
-    margin-left: 250%;
-    margin-top: -200px;
+    margin-left: 190%;
+    margin-top: -300px;
 
   }
+
   .lang{
     margin-top: -100px;
   }
@@ -94,13 +101,25 @@
   }
   @media only screen and (max-width: 768px) {
     .background-login {
-      
+        .styleInputforgotpass {
+            height: 40px;
+            width: 300px;
+            border-radius: 10px;
+            background-color: #1e1e2e !important;
+            color: #ffff;
+            font-size: 18px;
+        }
         .imglogo {
             height: 140px;
             width: 140px;
-            margin-top: 20%;
+            margin-top: 40%;
             margin-bottom: 20%;
             margin-left:100px;
+        }
+        .textspan{
+            color: #ffff;
+            font-size: 10px;
+            
         }
         .forgotpass{
   
@@ -117,17 +136,46 @@
 
             margin-left: -100px;
         }
-        .selectLang-small .ant-select-selector {
+        .selectLang-smallforgot .ant-select-selector {
             width: 144px;
             height: 40px;
             background-color: #1e1e2e;
             color: #fff;
-            margin-left: 4%;
-            margin-top: 100px;
+            margin-left:-6%;
+            margin-top: 150px;
+          
             margin-right: 1px;
+           
 
         
           }
+          .imglogoforgot{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            margin-left: 60px;
+          display: block;
+          margin-top: 10%;
+          margin-bottom: 30%;
+          margin-left: 20%;
+    
+        
+        }
+        .btnloginforgot {
+            background-color: #FF7506;
+            border-style: none;
+            height: 46px;
+            width: 190px;
+            color: #fff;
+            transition: background-color 0.3s, color 0.1s; /* Add transition for smooth effect */
+            border-radius: 4px;
+            margin-left: -10px;
+        }
+        
+        .btnloginforgot:hover {
+            background-color: #f38135; /* Darker shade of orange */
+          
+        }
           .lang{
             margin-top: -100px;
           }

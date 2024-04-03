@@ -1,18 +1,18 @@
+
 import React from 'react';
 import {  Checkbox, Form, Input } from 'antd';
 import logo from "../../../asset/logo.jpg";
 import vietnam from "../../../asset/vietnam.jpg";
 import english from "../../../asset/english.png";
 import { DownOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';
 
-import "./Style.scss";
+import "./StyleResetPassword.scss";
 import {
 
   Select,
 
 } from 'antd';
-const Login: React.FC = () => {
+const resetPassword: React.FC = () => {
   const onFinish = (values: any) => {
     console.log('Success:', values);
   };
@@ -29,7 +29,7 @@ const Login: React.FC = () => {
         
     <div className='lang' >
     <Form.Item>
-  <Select defaultValue="vie" className='selectLang-small'>
+  <Select defaultValue="vie" className='selectLangreset-small'>
     <Select.Option value="vie">Việt Nam <img className='imglang' src={vietnam} alt="Vietnamese Flag" /> <span className='icondown'><DownOutlined /></span></Select.Option>
     <Select.Option value="eng">English <img className='imglang' src={english} alt="English Flag" /> <span className='icondown'><DownOutlined /></span></Select.Option>
   </Select>
@@ -37,7 +37,7 @@ const Login: React.FC = () => {
 
 
         <img className='imglogo' src={logo} alt="Logo" />
-         <h1 className='textlogin'>Đăng nhập</h1>
+         <h1 className='textlogin'>Đặt lại mật khẩu</h1>
           </div>
         <Form
           name="basic"
@@ -50,22 +50,21 @@ const Login: React.FC = () => {
           autoComplete="off"
         >
 
-          <div className='row-12'>
-            <p  className='textinput'>Tên đăng nhập</p>
-          <Form.Item
-          
-            name="username"
-            rules={[{ required: true, message: 'Please input your username!' }]}
-          >
-            
-            <Input className='styleInput' />
-          </Form.Item>
-          </div>
-      <div className='row-12'>
-        <p className='textinput'>PassWord</p>
+<div className='row-12'>
+        <p className='textinput'>Mật khẩu mới:</p>
           <Form.Item
          
             name="password"
+            rules={[{ required: true, message: 'Please input your password!' }]}
+          >
+            <Input.Password className='styleInput' />
+          </Form.Item>
+          </div>
+      <div className='row-12'>
+        <p className='textinput'>Nhập lại mật khẩu mới:</p>
+          <Form.Item
+         
+            name="retypepassword"
             rules={[{ required: true, message: 'Please input your password!' }]}
           >
             <Input.Password className='styleInput' />
@@ -77,17 +76,15 @@ const Login: React.FC = () => {
           </Form.Item>
 
           <Form.Item wrapperCol={{ offset: 6, span: 16 }}>
-          <Link to="/navbar">
-            <button className='btnlogin' >
-              Đăng nhập
+            <button className='btnretype' >
+              Lưu mật khẩu
             </button>
-            </Link>
 
           </Form.Item>
 
         </Form>
 
-      <div className='forgotpass'> <a className='textforgotpass' href="/Forgotpass">Quên mật khẩu</a></div>
+    
       </div>
 
     </div>
@@ -95,4 +92,4 @@ const Login: React.FC = () => {
   );
 };
 
-export default Login;
+export default resetPassword;

@@ -1,0 +1,165 @@
+.imglogonavbar{
+    height: 140px;
+    width: 140px;
+border-radius: 50%;
+   margin-left:25px;
+   margin-bottom: 50%;
+   
+   margin-top: 10px;
+}
+.ant-layout-sider {
+    width: 10px; // Đặt chiều rộng của Sider
+    
+  }
+.textnavbar {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-left: 25%;
+    margin-top: -20px;
+    
+  }
+  .textnavbar1 {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-left: 30%;
+    margin-top: -20px;
+    
+  }
+  .selectlang .ant-select-selector {
+   margin-left: 1100%;
+    width: 130px !important; /* Chiều rộng tối thiểu */
+    background-color: #020220 !important;
+    color: #ffff;
+  }
+  .textlang{
+    margin-top: 5px !important;
+  }
+ /* CSS */
+.imglang {
+    width: 20px; /* Độ rộng */
+    height: 20px; /* Độ cao */
+    border-radius: 50%; /* Làm tròn góc */
+
+  }
+  .imgstyle{
+    margin-top:-26px;
+    margin-left: 50px;
+  }
+  .imgstylevn{
+    margin-top:-26px;
+    margin-left: 66px;
+  }
+// StyleNavbar.scss
+.key {
+    padding: 30px 0; /* Thêm padding cho mỗi item */
+  }
+  
+  .key .anticon {
+    margin-bottom: 5%; /* Khoảng cách giữa icon và chữ */
+    margin-left: 10%;
+  }
+  .icon{
+    margin-left: 30%;
+  }
+// StyleNavbar.scss
+// StyleNavbar.scss
+.ant-menu-dark .ant-menu-item-selected {
+    background-color: #020220 !important; /* Đặt màu nền của option được chọn thành màu cam */
+    position: relative; /* Thiết lập vị trí tương đối cho option */
+    color: #FF7506;
+  }
+  .custom-dark-menu.ant-menu-dark {
+    background-color: #020220; 
+    border-bottom-left-radius: 5px; /* Border radius cho góc dưới bên trái */
+    border-bottom-right-radius: 5px;
+  }
+  
+  
+  .ant-menu-dark .ant-menu-item-selected::after {
+    content: ''; /* Thêm nội dung cho pseudo-element */
+    position: absolute; /* Thiết lập vị trí tuyệt đối cho pseudo-element */
+    top: 0; /* Đặt vị trí ở đầu trên của option */
+    left: -2px; /* Đặt vị trí bên trái của option */
+    width: 3px; /* Độ rộng của thanh dọc */
+    height: 100%; /* Chiều cao của thanh dọc bằng chiều cao của option */
+    background-color: #FF7506; /* Màu sắc của thanh dọc */
+    
+  }
+
+  .stylenavbar{
+    display: flex;
+
+  }
+  .navbar2{
+    height: 70px;
+    width: 100%;
+    background-color: #1E1E2E;
+  }
+  .selectLang-smallnavbar .ant-select-selector {
+    color: #ffff;
+    margin-left: 900%;
+    background-color: #020220 !important; 
+  }
+
+.langnavbar{
+    margin-top: 20px;
+    height: 40px;
+    width: 152px;
+}
+.infoUser {
+    display: flex; /* Sử dụng flexbox để các phần tử con nằm ngang chung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-left: 900%;
+    margin-top: -13px;
+
+
+  }
+  
+  .userInfo {
+    display: flex; /* Sử dụng flexbox để các phần tử con nằm ngang chung */
+    align-items: center; /* Căn giữa theo chiều dọc */
+  }
+  
+  .imguser {
+    border-radius: 50%;
+    width: 35px; /* Độ rộng của hình ảnh */
+    height: auto; /* Chiều cao tự động dựa trên độ rộng */
+    margin-right: 10px; /* Khoảng cách giữa hình ảnh và văn bản */
+    cursor: pointer; /* Thay đổi con trỏ thành dạng bấm được khi hover */
+}
+
+.imguser:hover {
+    opacity: 0.7; /* Giảm độ trong suốt của hình ảnh khi hover */
+}
+
+.imguser:active {
+    transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
+}
+.textuser:hover {
+    opacity: 0.7; /* Giảm độ trong suốt của hình ảnh khi hover */
+}
+
+.textuser:active {
+    transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
+}
+.textuser{
+    cursor: pointer; /* Thay đổi con trỏ thành dạng bấm được khi hover */
+}
+  .textadmin{
+    color: #FF7506;
+    margin-top: 15px;
+    font-size: 14px;
+    margin-left: -55px;
+  }
+  @media only screen and (max-width: 768px) {
+    .userInfo {
+       float: inline-start;
+      }
+      .sider{
+       display: none;
+       
+      }
+      .selectlang{
+        margin-left: -800%;
+      }
+  }
