@@ -5,6 +5,8 @@ import ForGotpass from './pages/forGotPass/forGotpass';
 import PasswordRecovery from './pages/passwordRecovery/passwordRecovery';
 import ResetPassword from './pages/resetPassword/resetPassword';
 import Navbar from '../component/Navbar/Navbar';
+import UserInformation from './pages/userinformation/UserInformation';
+import Disconnect from './pages/disconnect/Disconnect';
 
 
 
@@ -17,10 +19,12 @@ const DefaultLayout = () => {
           <Route path="/Login" element={<Login />} /> {/* Use PascalCase for component names */}
           <Route path="/ForGotpass" element={<ForGotpass />} />
           <Route path="/passwordRecovery" element={<PasswordRecovery />} />
-          <Route path="/passwordRecovery" element={<ResetPassword />} />
+          <Route path="/disconnect" element={<Disconnect />} />
+
+          <Route path="/resetPassword" element={<ResetPassword />} />
           <Route path="/navbar" element={<Navbar />} />
-
-
+          <Route path="/userInformation" element={<UserInformation />} />
+     
 
         </Routes>
       </div>

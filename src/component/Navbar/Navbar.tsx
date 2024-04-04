@@ -2,10 +2,12 @@ import logo from "../../asset/logo.jpg";
 import { Layout, Menu, Select } from 'antd';
 import "./StyleNavbar.scss";
 import { Link } from 'react-router-dom';
-import { PlaySquareOutlined, UnorderedListOutlined, ScheduleOutlined, FileTextOutlined, FileProtectOutlined, SettingOutlined } from '@ant-design/icons';
+import { PlaySquareOutlined, UnorderedListOutlined, ScheduleOutlined, FileTextOutlined, FileProtectOutlined, SettingOutlined,QuestionCircleOutlined } from '@ant-design/icons';
 import vietnamFlag from "../../asset/vietnam.jpg";
 import englishFlag from "../../asset/english.png";
 import User from "../../asset/user.jpg";
+
+
 
 const { Sider } = Layout;
 
@@ -24,7 +26,7 @@ const Sidebar = () => {
             <img className='imglogonavbar' src={logo} alt="Logo" />
           </div>
           <Menu.Item className='key' key="1">
-            <Link to="/navbar">
+            <Link to="/userInformation">
               <span className='icon'><PlaySquareOutlined /></span>
               <div className='textnavbar'>kho bản ghi</div>
             </Link>
@@ -59,6 +61,12 @@ const Sidebar = () => {
               <div className='textnavbar1'>Cài đặt</div>
             </Link>
           </Menu.Item>
+          <Menu.Item className='key' key="6">
+            <Link to="/navbar">
+              <span className='icon'><QuestionCircleOutlined /></span>
+              <div className='textnavbar1'>Hỗ trợ</div>
+            </Link>
+          </Menu.Item>
         </Menu>
         </div>
       </Sider>
@@ -79,12 +87,18 @@ const Sidebar = () => {
           </div>
           <div className="infoUser">
             <div className="userInfo">
-              <img className="imguser" src={User} alt="user" />
-              <h5 className="textuser" style={{ color: "#ffff", marginTop:"-10px" }}>Ng.Tuyết </h5>
+            <Link to="/userInformation">
+             <img className="imguser" src={User} alt="user" />
+                  </Link>
+                  <Link to="/userInformation">
+                  <h5 className="textuser" style={{ color: "#ffff", marginTop:"-10px" }}>Ng.Tuyết </h5>
+                  </Link>
+          
               <div className="textadmin"><span>Admin</span></div>
             </div>
           </div>
         </div>
+             
       </div>
     </div>
   );

@@ -1,0 +1,166 @@
+.styleuseraa {
+background-color: #1E1E2E ;
+height: 100vh;
+
+  }
+  .containerinfor{
+    margin-left: 14%;
+    margin-top: -47%;
+
+  }
+  .textttcb{
+    color: #ffff;
+  }
+  .imguserinfor{
+    height: 15%;
+    width: 15%;
+    border-radius: 50%;
+
+  }
+  .styleiconcammera{
+    margin-top: -4%;
+    margin-left: 10%;
+   font-size: 300%;
+   color: #ffff ;  
+     margin-bottom: 20px;
+  }
+  .nameuser{
+    color: #ffff;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 10px;
+
+  }
+  .inputuser{
+  margin-left: 30%;
+   margin-top: -15%;
+  }
+  .Styleinput{
+    // Styleinputifor
+    height: 28px;
+    width: 201px;
+    border-radius: 5px;
+    border: none;
+    border-color: #1E1E2E;
+    background-color: #2B2B3F;
+    color: #ffff;
+    margin-bottom: 15%;
+
+  }
+
+.btnsetpasssubmit {
+  background-color: #FF7506 ;
+  color: #ffff;
+  border: none;
+  margin-right: 90px;
+
+}
+
+.btnsetpasssubmit:hover {
+  background-color: #FF7506 !important;
+  border-color: #FF7506 !important;
+
+
+  color: #2B2B3F;
+}
+  .btnsetpassback {
+    background-color: #2B2B3F;
+    color: #FF7506;
+    border-color: #FF7506;
+    width: 90px;
+    margin-right: 10px;
+}
+
+.btnsetpassback:hover {
+    background-color: #1E1E2E !important;
+    border-color: #FF7506 !important;
+    color: #FF7506   !important;
+
+    color: #2B2B3F;
+}
+
+  .setpass{
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    border-color: #1E1E2E;
+    background-color: #2B2B3F !important;
+    color: #ffff;
+    margin-bottom: 15%;
+  }
+  .stylesetpass{
+    margin-bottom: -40px;
+  }
+  .text{
+    color: #ffff;
+  }
+  .styleinput2{
+    height: 28px;
+    width: 31%;
+    border-radius: 5px;
+    border: none;
+    border-color: #1E1E2E;
+    background-color: #3E3E50;
+    color: #ffff;
+    margin-bottom: 3%;
+  }
+  .styleinputrole{
+    height: 28px;
+    width: 15%;
+    border-radius: 5px;
+    border: none;
+    border-color: #1E1E2E;
+    background-color: #3E3E50;
+ 
+    color: #ffff;
+  }
+  .StyleSetting{
+    height: 30%;
+    width: 7%;
+    float: right;
+    margin-top: -13%;
+    background-color: #2F2F41;
+
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  
+    .styleSet{
+      margin-bottom: 30%;
+      margin-top: 10%;
+      cursor: pointer; /* Thay đổi con trỏ thành dạng bấm được khi hover */
+      text-align: center;
+    }
+    .styleicon {
+      display: inline-block;
+      border-radius: 50%; /* Tạo hình tròn */
+      width: 40px; /* Độ rộng của icon */
+      height: 40px; /* Chiều cao của icon */
+      background-color: #727288; /* Màu nền của icon */
+      text-align: center;
+      line-height: 40px; /* Canh giữa icon */
+      
+    }
+    
+    .custom-icon {
+      color: white; /* Màu của icon */
+      font-size: 20px; /* Kích thước của icon */
+    color: #FF7506;
+    }
+    .styleSet:hover {
+      opacity: 0.7; /* Giảm độ trong suốt của hình ảnh khi hover */
+  }
+  
+  .styleSet:active {
+      transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
+  }
+/* StyleUserInformation.scss */
+/* StyleUserInformation.scss */
+.textthaydoimk{
+  color: #ffff;
+ 
+}
+
+
+
+  }
