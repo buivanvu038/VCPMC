@@ -44,7 +44,7 @@ const Sidebar = () => {
             </Link>
           </Menu.Item>
           <Menu.Item className='key' key="4">
-            <Link to="/navbar">
+            <Link to="/ContractList">
               <span className='icon'><FileTextOutlined /></span>
               <div className='textnavbar1'>Quản lý </div>
             </Link>

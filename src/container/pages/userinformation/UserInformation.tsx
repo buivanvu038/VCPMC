@@ -103,6 +103,15 @@ const UserInformation = () => {
                         </div>
                     </div>
                 </div>
+                <div className='btnuserformation'>
+                <Button  className='btnsetsaveuserback' key="back" onClick={handleCancel}>
+                Hủy
+            </Button>,
+            <Button className='btnsaveusersubmit' key="submit" type="primary" onClick={handleOk}>
+                Xác nhận
+            </Button>,
+
+                </div>
             </div >
             <div   className='custom-modal'>
                

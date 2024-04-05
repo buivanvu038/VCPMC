@@ -47,7 +47,16 @@ height: 100vh;
     margin-bottom: 15%;
 
   }
+.btnuserformation{
+  margin-top: 80px;
+  margin-left: 10%;
 
+
+}
+.btn1{
+  height: 540%;
+  width: 10%;
+}
 .btnsetpasssubmit {
   background-color: #FF7506 ;
   color: #ffff;
@@ -57,6 +66,21 @@ height: 100vh;
 }
 
 .btnsetpasssubmit:hover {
+  background-color: #FF7506 !important;
+  border-color: #FF7506 !important;
+
+
+  color: #2B2B3F;
+}
+.btnsaveusersubmit {
+  background-color: #FF7506 ;
+  color: #ffff;
+  border: none;
+  margin-right: 90px;
+
+}
+
+.btnsaveusersubmit:hover {
   background-color: #FF7506 !important;
   border-color: #FF7506 !important;
 
@@ -77,6 +101,22 @@ height: 100vh;
     color: #FF7506   !important;
 
     color: #2B2B3F;
+}
+
+.btnsetsaveuserback {
+  background-color: #2B2B3F;
+  color: #FF7506;
+  border-color: #FF7506;
+  width: 90px;
+  margin-right: 10px;
+}
+
+.btnsetsaveuserback:hover {
+  background-color: #1E1E2E !important;
+  border-color: #FF7506 !important;
+  color: #FF7506   !important;
+
+  color: #2B2B3F;
 }
 
   .setpass{

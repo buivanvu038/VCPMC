@@ -7,6 +7,7 @@ import ResetPassword from './pages/resetPassword/resetPassword';
 import Navbar from '../component/Navbar/Navbar';
 import UserInformation from './pages/userinformation/UserInformation';
 import Disconnect from './pages/disconnect/Disconnect';
+import ContractList from './pages/ContractList/ContractList';
 
 
 
@@ -24,6 +25,8 @@ const DefaultLayout = () => {
           <Route path="/resetPassword" element={<ResetPassword />} />
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/userInformation" element={<UserInformation />} />
+          <Route path="/contractList" element={<ContractList />} />
+
      
 
         </Routes>
