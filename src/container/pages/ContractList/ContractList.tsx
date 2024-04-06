@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navbar from "../../../component/Navbar/Navbar";
 import { RightOutlined ,SearchOutlined} from '@ant-design/icons';
 import { PlusCircleOutlined } from '@ant-design/icons';
-
+import { Link } from 'react-router-dom';
 
 import "./StyleContractList.scss"; // Make sure the correct path is provided
 
@@ -18,7 +18,7 @@ const ContractList = () => {
       <Navbar/>
       <div className='containerinfor'>
         <div className='direct'>
-          <p>
+          <p className='text'>
             quản lý <span className='iconright'><RightOutlined /></span> Quản lý hợp đồng
           </p>
         </div>
@@ -101,7 +101,10 @@ const ContractList = () => {
           <td>Người biểu diễn</td>
           <td>Còn thời hạn</td>
           <td>01/04/2021 15:53:13</td>
-          <td className='xemchitiet'>Xem chi tiết</td>
+          <td >
+          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          </td>
+         
 
         </tr>
         <tr className="table-divider">

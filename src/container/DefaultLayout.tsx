@@ -8,6 +8,9 @@ import Navbar from '../component/Navbar/Navbar';
 import UserInformation from './pages/userinformation/UserInformation';
 import Disconnect from './pages/disconnect/Disconnect';
 import ContractList from './pages/ContractList/ContractList';
+import Detail from './pages/Detail/Detail';
+import Athority from './pages/Athority/Athority';
+import Editwork from './pages/Editwork/Editwork';
 
 
 
@@ -26,6 +29,12 @@ const DefaultLayout = () => {
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/userInformation" element={<UserInformation />} />
           <Route path="/contractList" element={<ContractList />} />
+          <Route path="/detail" element={<Detail />} />
+          <Route path="/athority" element={<Athority />} />
+          <Route path="/editwork" element={<Editwork />} />
+
+
+
 
      
 

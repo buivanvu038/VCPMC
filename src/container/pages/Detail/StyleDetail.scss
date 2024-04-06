@@ -1,0 +1,196 @@
+.StyleSettingDetail{
+    height: 30%;
+    width: 7%;
+    float: right;
+    margin-top: -10%;
+    background-color: #2F2F41;
+
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  
+    .styleSetDetail{
+      margin-bottom: 30%;
+      margin-top: 10%;
+      cursor: pointer; /* Thay đổi con trỏ thành dạng bấm được khi hover */
+      text-align: center;
+    }
+    .styleiconDetail {
+      display: inline-block;
+      border-radius: 50%; /* Tạo hình tròn */
+      width: 40px; /* Độ rộng của icon */
+      height: 40px; /* Chiều cao của icon */
+      background-color: #727288; /* Màu nền của icon */
+      text-align: center;
+      line-height: 40px; /* Canh giữa icon */
+      
+    }
+    
+    .custom-icon {
+      color: white; /* Màu của icon */
+      font-size: 20px; /* Kích thước của icon */
+    color: #FF7506;
+    }
+    .custom-iconx {
+        color: white; /* Màu của icon */
+        font-size: 20px; /* Kích thước của icon */
+      color: red    ;
+      }
+    .styleSet:hover {
+      opacity: 0.7; /* Giảm độ trong suốt của hình ảnh khi hover */
+  }
+  
+  .styleSetDetail:active {
+      transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
+  }
+/* StyleUserInformation.scss */
+/* StyleUserInformation.scss */
+.textthaydoimk{
+  color: #ffff;
+ 
+}}
+.iconright{
+    color: #FF7506;
+}
+.thanhngang{
+    color: #ffff;
+}
+.contentdetail{
+    margin-left: 14%;
+    margin-top: 4%
+}
+/** Global CSS **/
+.containerdetail {
+
+    display: flex;
+   }
+   .item {
+    
+
+    color: white;
+    height: 10px;
+     margin-left: 1%;
+    line-height: 30px;
+    width: 1000px;
+   }
+   
+   .contentdetail2{
+    margin-left: 14%;
+    margin-top: 18%
+}
+/** Global CSS **/
+.container2{
+
+    display: flex;
+   }
+   .item {
+    
+
+    color: white;
+    height: 10px;
+     margin-left: 1%;
+    line-height: 30px;
+    width: 1000px;
+   }
+   
+   .styledetailtext{
+    opacity: 0.5;
+   }
+   
+
+
+
+// StyleContractList.scss
+
+.tabs {
+  width: 20%;
+
+margin-left: 1px;
+margin-top: -50px;
+  position: relative;
+  display: flex;
+  top: 50px;
+  user-select: none;
+  background-color: #1E1E2E;
+  z-index: 99;
+  border-radius: 8px;
+  border: 1px solid #B65100; /* Thêm đường viền xung quanh */
+
+}
+
+// Globals
+$blue: #B65100;
+$white: #ffffff;
+$tabs: 2;
+
+@mixin tabs {
+  @for $i from 1 through $tabs {
+    &:nth-of-type(#{$i}) {
+      &:checked {
+        ~ .slider {
+          left: calc((100% / #{$tabs}) * #{$i - 1});
+        }
+      }
+    }
+  }
+}
+
+.inputcontrac {
+  position: absolute;
+  visibility:hidden;
+  
+  &:checked {
+    + label {
+        color: $white;
+      }
+  }
+  @include tabs;
+  &:first-of-type {
+    &:checked {
+      ~ .slider {
+        left: 0;
+      }
+    }
+  }
+}
+
+.labelcontrac {
+  cursor: pointer;
+  color: $white;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Source Sans Pro, sans-serif;
+  text-align: center;
+  height: 35px;
+  transition: color 0.2s ease-in-out;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slider {
+  background: $blue;
+  width: calc(98% / #{$tabs});
+  height: 90%;
+  position: absolute;
+  left: 0;
+  transition: left 0.3s linear;
+  border-radius: 4%;
+  margin: 2px;
+  z-index: -1;
+}
+
+
+select{
+  border:none;
+  padding: 30px 20px;
+  border-radius:5px;
+}
+
+select:focus{
+  outline:none;
+}
+.styletabs{
+  color: #ffff;
+  text-decoration:none;
+}
