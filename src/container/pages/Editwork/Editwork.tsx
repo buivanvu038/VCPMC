@@ -290,7 +290,13 @@ const Editwork = () => {
       
       </tbody>
     </table>
+    
         </div>
+      </div>
+      <div className='stylebtn'>
+        <button className='btnedit1'> Hủy </button>
+        <button className='btnedit'>Lưu</button>
+
       </div>
     </div>
   );

@@ -26,7 +26,6 @@ const Detail = () => {
             duration: 8
         });
     }
-    
     const handleCancel = () => {
         setChangePasswordVisible(false);
     }
@@ -38,7 +37,7 @@ const Detail = () => {
             <div className='containerinfor'>
             <div className='direct'>
           <p className='thanhngang'>
-            quản lý <span className='iconright'><RightOutlined /></span> Quản lý hợp đồng
+            quản lý <span className='iconright'><RightOutlined /></span> Quản lý hợp đồng<span className='iconright'><RightOutlined /></span> 
           </p>
         </div>
                 <h1 className='textttcb'>Chi tiết hợp đồng uỷ quyền bài hát - BH123</h1>
@@ -136,7 +135,8 @@ Quận Bình Thạnh, <br /> Thành phố Hồ Chí Minh </span></p>
                         <div className='styleiconDetail'>
                              <FormOutlined className='custom-icon' />
                         </div>
-                        <div className='text'>Chỉnh sửa hợp đồng</div>
+                      
+                        <Link className='xemchitietatho' to="/contractEditing">  <div className='text'>Chỉnh sửa hợp đồng</div></Link>
                     </div>
                     <div className='styleSetDetail'>
                         <div className='styleiconDetail'>

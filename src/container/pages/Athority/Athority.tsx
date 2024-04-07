@@ -26,10 +26,10 @@ const Athority = () => {
         <h1 className='text'>Danh sách hợp đồng</h1>
         <div className="tabs">
   <input className='inputcontrac' type="radio" name="tabs" id="tab1" />
-  <label className='labelcontrac' htmlFor="tab1">Hợp đồng ủy quyền</label>
+  <label className='labelcontrac' htmlFor="tab1">Thông tin hợp đồng </label>
           
   <input className='inputcontrac' type="radio" name="tabs" id="tab2" defaultChecked />
-  <label className='labelcontrac' htmlFor="tab2">Hợp đồng khai thác</label>
+  <label className='labelcontrac' htmlFor="tab2">Tác phẩm ủy quyền</label>
             
   <div className="slider"></div>
 </div>

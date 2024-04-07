@@ -11,6 +11,7 @@ import ContractList from './pages/ContractList/ContractList';
 import Detail from './pages/Detail/Detail';
 import Athority from './pages/Athority/Athority';
 import Editwork from './pages/Editwork/Editwork';
+import ContractEditing from './pages/ContractEditing/ContractEditing';
 
 
 
@@ -32,6 +33,8 @@ const DefaultLayout = () => {
           <Route path="/detail" element={<Detail />} />
           <Route path="/athority" element={<Athority />} />
           <Route path="/editwork" element={<Editwork />} />
+          <Route path="/contractEditing" element={<ContractEditing />} />
+
 
 
 
