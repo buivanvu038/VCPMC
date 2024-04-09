@@ -1,0 +1,20 @@
+.custom-tableplaylist {
+    border-collapse: collapse;
+    width: 84%;
+    background-color: #2F2F41;
+    border-radius: 10px;
+    margin-top: 2%;
+   
+  }
+  
+  .custom-tableplaylist th, .custom-tableplaylist td {
+  
+    padding: 8px;
+    
+  }
+  .custom-tableplaylist .table-divider td {
+    border-top: 1px solid rgb(255, 255, 255); // Đường kẻ dài ngang bảng
+    opacity: 3;
+    color: #ffff;
+    
+  }

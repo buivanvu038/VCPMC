@@ -1,0 +1,189 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Chia thành 2 cột */
+    gap: 20px; /* Khoảng cách giữa các ô */
+    margin-left: -140px;
+    margin-top: -20px;
+  }
+  
+  .left-column {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Chia cột trái thành 2 hàng */
+    margin-left: 35%;
+  }
+  
+  .right-column {
+    /* Không cần thiết lập gì cả */
+    background-color: #2B2B3F;
+    width: 70%;
+    border-radius: 5px;
+
+
+  }
+  
+  .top-left-box {
+    background-color: #2B2B3F;
+    padding: 20px;
+    border-radius: 5px;
+    height: 110%;
+
+  }
+  
+  .bottom-left-box {
+    background-color: #2B2B3F;
+    padding: 120px;
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-bottom: 1px;
+
+  }
+  
+  /* Các tùy chỉnh khác có thể được thêm vào đây */
+
+  /* Định dạng icon cụ thể */
+  
+  .StyleSettingupdate{
+    height: 30%;
+    width: 7%;
+    float: right;
+    margin-top:-2%;
+    background-color: #2F2F41;
+  
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+  
+    .styleSetupdate{
+      margin-bottom: 30%;
+      margin-top:25%;
+      cursor: pointer; /* Thay đổi con trỏ thành dạng bấm được khi hover */
+      text-align: center;
+    }
+    .styleiconupdate {
+      display: inline-block;
+      border-radius: 50%; /* Tạo hình tròn */
+      width: 40px; /* Độ rộng của icon */
+      height: 40px; /* Chiều cao của icon */
+      background-color: #727288; /* Màu nền của icon */
+      text-align: center;
+      line-height: 40px; /* Canh giữa icon */
+      
+    }
+    
+  .styleSetupdate{
+    margin-bottom: 30%;
+    margin-top:25%;
+    cursor: pointer; /* Thay đổi con trỏ thành dạng bấm được khi hover */
+    text-align: center;
+  }
+    .custom-iconupdate {
+      color: white; /* Màu của icon */
+      font-size: 25px; /* Kích thước của icon */
+    margin-top:20%;
+    color: red;
+        
+    }
+    .styleSetupdate:hover {
+      opacity: 0.7; /* Giảm độ trong suốt của hình ảnh khi hover */
+  }
+  
+  .styleSetupdate:active {
+      transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
+  }
+  /* StyleUserInformation.scss */
+  /* StyleUserInformation.scss */
+  .textthaydoimk{
+  color: #ffff;
+  
+  }}
+  .styleluubtn{
+    margin-top: 22%;
+    margin-left: 18%;
+  }
+  .textcenter1{
+    text-align: center;
+    color: #FF7506;
+  }
+  .textcenter2{
+    text-align: center;
+    color: #ffff;
+    opacity: 0.5;
+  }
+  .textcenter{
+    text-align: center;
+  
+  }
+  .textcenter5{
+    text-align: center;
+    color: #FF7506;
+    font-size: 17px;
+    margin-top: -60px
+  }
+  .thongtinupdate{
+    color: #ffff;
+    opacity: 0.5;
+    margin-left: 260px;
+    font-size: 10px !important;
+  }
+  .thongtinupdate1{
+    color: #ffff;
+    opacity: 0.5;
+    margin-left: 300px;
+  }
+  .thongtinupdate2{
+    color: #ffff;
+    opacity: 0.5;
+    margin-left: 286px;
+  }  .thongtinupdate3{
+    color: #ffff;
+    opacity: 0.5;
+    margin-left: 304px;
+  }  .thongtinupdate4{
+    color: #ffff;
+    opacity: 0.5;
+    margin-left: 269px;
+  }
+  .imgbai1{
+    margin-left: 1%;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+
+  .text1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -30%;
+    color: #ffff;
+    font-size: 13px;
+  }
+  .span1 {
+    
+    opacity: 0.5;
+    text-align:right !important;
+  }
+  
+.forminputthongtin{
+  padding: 20px;
+}
+.styleinputthongtin{
+  margin-bottom: 60px;
+  color: #ffff;
+  margin-top: -5px;
+
+}
+.styleinput{
+  margin-top:6px;
+  width: 500px;
+  height: 30px;
+  border: none ;
+  border-radius: 5px;
+  border: #8b8ba5 1px solid;
+  background-color: #33334D;
+}
+.styledrop{
+  width: 500px;
+  height: 40px;
+ color: #ffff;
+  background-color: #33334D;
+}

@@ -77,7 +77,7 @@ const Login: React.FC = () => {
           </Form.Item>
 
           <Form.Item wrapperCol={{ offset: 6, span: 16 }}>
-          <Link to="/navbar">
+          <Link to="/recordStore">
             <button className='btnlogin' >
               Đăng nhập
             </button>

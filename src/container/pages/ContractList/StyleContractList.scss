@@ -2,9 +2,8 @@
 
 .tabs {
   width: 20%;
-
-margin-left: 1px;
-margin-top: -50px;
+  margin-left: 1px;
+  margin-top: -50px;
   position: relative;
   display: flex;
   top: 50px;
@@ -12,7 +11,7 @@ margin-top: -50px;
   background-color: #1E1E2E;
   z-index: 99;
   border-radius: 8px;
-  border: 1px solid #B65100; /* Thêm đường viền xung quanh */
+  border: 2px solid #B65100; /* Thêm đường viền xung quanh */
 
 }
 
@@ -89,7 +88,7 @@ select{
 select:focus{
   outline:none;
 }
-.dropdown {
+.dropdownsohuu {
   margin-top: -2%;
   margin-left: 8%;
   margin-right: 82%;
@@ -100,6 +99,7 @@ select:focus{
 .dropdowncontent {
   background-color: #1E1E2E;
   color: #ffffff;
+ 
 }
 .quyensohuu{
   margin-top: 5%;
@@ -118,6 +118,7 @@ select:focus{
 .dropdowncontent1 {
   background-color: #1E1E2E;
   color: #ffffff;
+  margin-top: 2%;
 }
 .quyensohuu1{
   margin-top: -2%;
@@ -171,11 +172,11 @@ body{
 }
 
 /*Resize the wrap to see the search bar change!*/
-.wrap{
+.wrapcontrac{
   width: 30%;
   border-radius: 10px;
   position: absolute;
-  top: 27%;
+  top: 23%;
   left: 80%;
   background-color: #2B2B3F !important;
 
@@ -220,7 +221,7 @@ width: 20%;
   width: 90%;
   background-color: #2F2F41;
   border-radius: 10px;
-  margin-top: 1%;
+  margin-top: 2%;
 }
 
 .custom-table th, .custom-table td {
@@ -293,8 +294,7 @@ width: 20%;
 .styleSetcontrac:active {
     transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
 }
-/* StyleUserInformation.scss */
-/* StyleUserInformation.scss */
+
 .textthaydoimk{
 color: #ffff;
 

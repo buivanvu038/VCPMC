@@ -1,0 +1,353 @@
+.wrapeditrecord{
+    width: 50%;
+    border-radius: 10px;
+    position: absolute;
+    top: 14%;
+    left: 24%;
+    background-color: #2B2B3F !important;
+  
+    height: 4%;
+    width: 20%;
+    transform: translate(-50%, -50%);
+  }
+  ///////////////////////////
+  .dropdown0 {
+    margin-top: -2%;
+    margin-left: 5%;
+    margin-right: 86%;
+    border: 2px solid #B65100; /* Thêm đường viền 2px với màu #B65100 */
+    border-radius: 9px;
+  }
+  
+  .dropdowncontent0 {
+    background-color: #1E1E2E;
+    color: #ffffff;
+  }
+  .theloai{
+    margin-top: 5%;
+    color: #ffffff;
+    margin-left: 10px;
+  }
+////////////////////////
+  .customdrop{
+
+    margin-left: -1%;
+  }
+  .dropdownrecord {
+    margin-top: -2%;
+    margin-left: 51%;
+    margin-right: 50%;
+    border: 2px solid #B65100; /* Thêm đường viền 2px với màu #B65100 */
+    border-radius: 9px;
+  }
+
+
+
+  .dropdownrecordcc {
+    margin-top: -28px;
+    margin-left: 22%;
+    margin-right: 69%;
+    border: 2px solid #B65100; /* Thêm đường viền 2px với màu #B65100 */
+    border-radius: 9px;
+  }
+  
+  .dropdowncontentrecordcc {
+    background-color: #1E1E2E;
+    color: #ffffff;
+  }
+  .dinhdang{
+    margin-top: -2%;
+    color: #ffffff;
+    margin-left: 16%;
+  }
+///////////////////////////////////////
+  
+  .dropdownrecord {
+    margin-top: -1.7%;
+    margin-left: 42%;
+    margin-right: 49%;
+    border: 2px solid #B65100; /* Thêm đường viền 2px với màu #B65100 */
+    border-radius: 9px;
+  }
+  .dropdowncontentrecord {
+    background-color: #1E1E2E;
+    color: #ffffff;
+  }
+  .thoihan{
+    margin-top: -2%;
+    color: #ffffff;
+    margin-left: 33%;
+  }
+
+/////////////////////////////////////////////
+
+
+  .dropdownrecord1 {
+    margin-top: -1.6%;
+    margin-left: 58%;
+    margin-right: 33%;
+    border: 2px solid #B65100; /* Thêm đường viền 2px với màu #B65100 */
+    border-radius: 9px;
+  }
+  
+  .dropdowncontentrecord1 {
+    background-color: #1E1E2E;
+    color: #ffffff;
+  }
+  .trangthai{
+    margin-top: -2%;
+    color: #ffffff;
+    margin-left: 52%;
+  }
+  .bodytablerecord{
+    color: #ffff;
+    text-align: center;
+    font-size: 13px;
+    margin-right: 20px;
+  }
+  .view-mode-buttons {
+    display: flex;
+    margin-left: 80%;
+    margin-top: -2.4%;
+  }
+  
+  .view-mode-buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-mode-buttons button.active {
+    background-color: #1E1E2E;
+  }
+  
+  .styleicon {
+    font-size: 30px;
+
+  }
+  
+  /* Định dạng icon cụ thể */
+  .styleicon .anticon {
+    color: #FF7506 !important;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 22%;
+    padding: 0 10px;
+  }
+  
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 700px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 23%;
+    padding: 0 10px;
+  }
+  
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row{
+    margin-top: 30px;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    height: 100%;
+    width: 90%;
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    background-color: #37374b;
+   
+  }
+  .imgbai1{
+    margin-left: 60px;
+    height: 1220%;
+    width: 120%;
+  }
+  .card img {
+    width: 324px; /* Hình ảnh rộng bằng kích thước thẻ card */
+    height: 140px;  
+    margin-left: -50px;
+    margin-top: -50px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+    object-fit: cover;
+    
+  }
+  .card-content {
+    
+    margin-top: -10px;
+    margin-left: -30px;
+    margin-bottom: -40px;
+  }
+  .thongtin{
+    
+    margin: 3px;
+    color: #ffff;
+    opacity: 0.7;
+  }
+  .boxthongtin1{
+    border: 1px solid;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    border-color: #f1f1f1;
+    opacity: 0.8;
+    margin: 2px;
+    margin-top: 5px;
+  }
+  .texttheloai1{
+    color: #ffff;
+    font-size: 11px;
+    margin-left: 7px;
+    opacity: 0.5;
+
+
+  }
+  
+  .textloai1{
+    color: #ffff;
+    margin-left: 13px;
+  }
+
+
+  .custom-tabledit .table-dividerr td {
+    border-top: 1px solid rgb(255, 255, 255); // Đường kẻ dài ngang bảng
+    opacity: 3;
+    color: #ffff;
+   opacity: 0.5 !important;
+  }
+  
+
+  .boxthongtin2{
+    border: 1px solid;
+    height: 40px;
+    width: 60px;
+    border-radius: 10px;
+    border-color: #f1f1f1;
+    opacity: 0.8;
+    margin: 2px;
+    margin-top: 5px;
+  }
+  .texttheloai2{
+    color: #ffff;
+    font-size: 11px;
+    margin-left: 5px;
+    opacity: 0.5;
+
+
+  }
+  .textloai2{
+    color: #ffff;
+    margin-left: 10px;
+  }
+
+
+
+
+
+  .boxthongtin3{
+    border: 1px solid;
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    border-color: #f1f1f1;
+    opacity: 0.8;
+    margin: 2px;
+    margin-top: 5px;
+  }
+  .texttheloai3{
+    color: #ffff;
+    font-size: 1px;
+    margin-left: 7px;
+    opacity: 0.5;
+
+
+  }
+  .textloai3{
+    color: #ffff;
+    margin-left: 13px;
+  }
+  .styleiconboxtt{
+    color: #FF7506;
+    margin-top: -25px;
+    margin-left: 260px;
+    font-size: 24px; /* Điều chỉnh kích thước của icon */
+  }
+  .styleiconboxtt {
+    color: white; /* Màu của icon */
+    font-size: 20px; /* Kích thước của icon */
+  color: #FF7506;
+  cursor: pointer;
+  }
+  .styleiconboxtt:hover {
+    opacity: 0.7; /* Giảm độ trong suốt của hình ảnh khi hover */
+}
+.styleiconboxtt:active {
+    transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
+}
+.horizontal-line {
+  border-top: 1px solid black; /* Đường ngang */
+  margin-top: 10px; /* Khoảng cách từ đường ngang đến nội dung trên */
+  margin-bottom: 20px; /* Khoảng cách từ đường ngang đến nội dung dưới */
+}
+.custom-tabledit th, .custom-tabledit td {
+
+  padding: 6px;
+
+}

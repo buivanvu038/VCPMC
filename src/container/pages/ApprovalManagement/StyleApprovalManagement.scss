@@ -1,0 +1,50 @@
+/* Đảm bảo màu nền cam cho checkbox */
+.stylecheckapp {
+    appearance: none; /* Ẩn giao diện mặc định của checkbox */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px; /* Chiều rộng của checkbox */
+    height: 20px; /* Chiều cao của checkbox */
+    border: 2px solid #347AFF; /* Viền của checkbox */
+    border-radius: 4px; /* Độ cong của viền */
+    cursor: pointer; /* Biểu tượng con trỏ khi rê chuột qua checkbox */
+  }
+  
+  /* Ẩn checkbox mặc định */    
+  .stylecheckapp::before {
+    content: "\2713"; /* Không có nội dung */
+    display: block; /* Hiển thị là khối */
+    width: 80%; /* Chiều rộng tối đa */
+    height: 100%; /* Chiều cao tối đa */
+    background-color: #347AFF; /* Màu nền cam */
+    color: #ffff;
+    border-radius: 2px; /* Độ cong của checkbox */
+    opacity: 0; /* Ẩn đi */
+    padding-left: 4px;
+    
+
+  }
+  
+  /* Hiển thị dấu tích khi checkbox được chọn */
+  .stylecheckapp:checked::before {
+    opacity: 1; /* Hiển thị */
+  }
+  .stylecheckboxlist{
+    color: #fff;
+    margin-left: 32%;
+    margin-top: -35px;
+  }
+  
+  .active {
+    color: #FF7506 !important ; /* Màu cam khi nút được nhấn */
+    
+  }
+  
+  .styleiconapp {
+    font-size: 30px;
+  }
+  
+  /* Định dạng icon cụ thể */
+  .styleiconapp .active {
+    background-color: #ffff ;
+  }

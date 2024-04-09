@@ -9,6 +9,21 @@ import "./StyleEditwork.scss"; // Make sure the correct path is provided
 import { Checkbox } from 'antd';
 
 const Editwork = () => {
+  const [selectAllChecked, setSelectAllChecked] = useState(false);
+  const [individualChecked, setIndividualChecked] = useState(Array(12).fill(false)); // Tạo một mảng 12 phần tử, mỗi phần tử là false
+
+  const handleSelectAllChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const isChecked = event.target.checked;
+    setSelectAllChecked(isChecked);
+    setIndividualChecked(Array(12).fill(isChecked)); // Cập nhật trạng thái của tất cả các checkbox cá nhân
+  };
+
+  const handleIndividualChange = (index: number) => (event: React.ChangeEvent<HTMLInputElement>) => {
+    const newCheckedState = [...individualChecked];
+    newCheckedState[index] = event.target.checked;
+    setIndividualChecked(newCheckedState);
+    setSelectAllChecked(newCheckedState.every((isChecked) => isChecked)); // Kiểm tra nếu tất cả các checkbox cá nhân đều được chọn
+  };
   const [isDarkMode, setIsDarkMode] = useState(false);
   const Editwork = () => {
     // Your component code here
@@ -61,7 +76,12 @@ const Editwork = () => {
         <table className="custom-tabledit">
       <thead style={{color:"#FFAC69"}}>
         <tr>
-          <th><Checkbox className='customcheckbox'></Checkbox>  </th>
+        <th>  <input 
+               className='stylecheckapp'
+          type="checkbox"
+          checked={selectAllChecked}
+          onChange={handleSelectAllChange}
+        /></th>
           <th>STT</th>
           <th>Tên bản ghi</th>
           <th>Mã ISRC</th>
@@ -76,7 +96,12 @@ const Editwork = () => {
       </thead>
       <tbody className='bodytable'>
         <tr>
-          <th><Checkbox className='customcheckbox'></Checkbox>  </th>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[0]}
+          onChange={handleIndividualChange(0)}
+        /></td>
           <td>1</td>
           <td>Gorgeous Wooden Bike <div className='styledetailtext'>Ballad<span className='stylecicle'>●</span>Audio<span className='stylecicle'>●</span>3:12</div></td>
           <td>VNA1423525</td>
@@ -93,7 +118,12 @@ const Editwork = () => {
 </tr>
 
         <tr>
-        <td> <Checkbox className='customcheckbox'></Checkbox>  </td>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[1]}
+          onChange={handleIndividualChange(1)}
+        /></td>
 
             
         <td>2</td>
@@ -113,8 +143,12 @@ const Editwork = () => {
 </tr>
 
         <tr>
-        <td> <Checkbox className='customcheckbox'></Checkbox>   </td>
-
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[2]}
+          onChange={handleIndividualChange(2)}
+        /></td>
 
         <td>3</td>
         <td>SmallConcreteFish<div className='styledetailtext'>Ballad<span className='stylecicle'>●</span>Audio<span className='stylecicle'>●</span>fdfdf</div></td>
@@ -133,7 +167,12 @@ const Editwork = () => {
   <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
 </tr>
         <tr>
-        <td><Checkbox className='customcheckbox'></Checkbox>  </td>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[3]}
+          onChange={handleIndividualChange(3)}
+        /></td>
 
         <td>4</td>
 
@@ -152,7 +191,12 @@ const Editwork = () => {
   <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
 </tr>
         <tr>
-        <td><Checkbox className='customcheckbox'></Checkbox>  </td>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[4]}
+          onChange={handleIndividualChange(4)}
+        /></td>
 
         <td>5</td>
         <td>SmallConcreteFish<div className='styledetailtext'>Ballad<span className='stylecicle'>●</span>Audio<span className='stylecicle'>●</span>fdfdf</div></td>
@@ -170,7 +214,12 @@ const Editwork = () => {
   <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
 </tr>
         <tr>
-        <td><Checkbox className='customcheckbox'></Checkbox>   </td>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[5]}
+          onChange={handleIndividualChange(5)}
+        /></td>
 
         <td>6</td>
         <td>SmallConcreteFish<div className='styledetailtext'>Ballad<span className='stylecicle'>●</span>Audio<span className='stylecicle'>●</span>fdfdf</div></td>
@@ -188,7 +237,12 @@ const Editwork = () => {
   <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
 </tr>
         <tr>
-        <td> <Checkbox className='customcheckbox'></Checkbox>   </td>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[6]}
+          onChange={handleIndividualChange(6)}
+        /></td>
 
         <td>7</td>
         <td>SmallConcreteFish<div className='styledetailtext'>Ballad<span className='stylecicle'>●</span>Audio<span className='stylecicle'>●</span>fdfdf</div></td>
@@ -206,8 +260,12 @@ const Editwork = () => {
   <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
 </tr>
         <tr>
-        <td> <Checkbox className='customcheckbox'></Checkbox>  </td>
-
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[7]}
+          onChange={handleIndividualChange(7)}
+        /></td>
           <td>8</td>
           <td>SmallConcreteFish<div className='styledetailtext'>Ballad<span className='stylecicle'>●</span>Audio<span className='stylecicle'>●</span>fdfdf</div></td>
           <td>VNA1423525</td>
@@ -224,7 +282,12 @@ const Editwork = () => {
   <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
 </tr>
         <tr>
-        <td> <Checkbox className='customcheckbox'></Checkbox>   </td>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[8]}
+          onChange={handleIndividualChange(8)}
+        /></td>
 
         <td>9</td>
         <td>SmallConcreteFish<div className='styledetailtext'>Ballad<span className='stylecicle'>●</span>Audio<span className='stylecicle'>●</span>fdfdf</div></td>
@@ -240,7 +303,12 @@ const Editwork = () => {
   <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
 </tr>
         <tr>
-        <td> <Checkbox className='customcheckbox'></Checkbox>   </td>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[9]}
+          onChange={handleIndividualChange(9)}
+        /></td>
 
         <td>10</td>
         <td>SmallConcreteFish<div className='styledetailtext'>Ballad<span className='stylecicle'>●</span>Audio<span className='stylecicle'>●</span>fdfdf</div></td>
@@ -256,7 +324,12 @@ const Editwork = () => {
   <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
 </tr>
         <tr>
-        <td> <Checkbox className='customcheckbox'></Checkbox>  </td>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[10]}
+          onChange={handleIndividualChange(10)}
+        /></td>
 
         <td>11</td>
         <td>SmallConcreteFish<div className='styledetailtext'>Ballad<span className='stylecicle'>●</span>Audio<span className='stylecicle'>●</span>fdfdf</div></td>
@@ -271,9 +344,12 @@ const Editwork = () => {
   <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
 </tr>
         <tr>
-        <td >
-        <Checkbox className='customcheckbox'></Checkbox>  
-</td>
+        <td > <input 
+            className='stylecheckapp'
+          type="checkbox"
+          checked={individualChecked[11]}
+          onChange={handleIndividualChange(11)}
+        /></td>
 
 
 

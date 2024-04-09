@@ -34,7 +34,7 @@ const ContractList = () => {
         </div>
         <div>
           <div className='quyensohuu'>Quyền sở hữu:</div>
-          <div className='dropdown'>
+          <div className='dropdownsohuu'>
             <select className='dropdowncontent' name="ownership" id="ownership">
               <option value="all">Tất cả</option>
               <option value="javascript">Tất cả</option>
@@ -55,7 +55,7 @@ const ContractList = () => {
           </div>
         </div>
         <div>
-          <div className="wrap">
+          <div className="wrapcontrac">
             <div className="search">
               <input type="text" className="searchTerm" placeholder="Tên hợp đồng,số hợp đồng,người ủy quyền..." />
               <button type="submit" className="searchButton">
@@ -69,7 +69,8 @@ const ContractList = () => {
                         <div className='styleiconcontrac'>
                              <PlusCircleOutlined className='custom-icon' />
                         </div>
-                        <div className='text'>Thêm hợp đồng</div>
+                        <div className='text'>  <Link className='styletabs' to="/addContract">Thêm hợp Đồng</Link>
+</div>
                     </div>
 
                  

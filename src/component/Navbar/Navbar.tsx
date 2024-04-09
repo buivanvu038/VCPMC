@@ -21,26 +21,26 @@ const Sidebar = () => {
       <Sider className="sider">
         <div className="stylemobile">
         <div className="logo" />
-        <Menu className="custom-dark-menu" style={{ height: "100vh" }} theme="dark" defaultSelectedKeys={['1']} mode="inline">
+        <Menu className="custom-dark-menu" style={{ height: "100vh" }} theme="dark"  mode="inline">
           <div> 
             <img className='imglogonavbar' src={logo} alt="Logo" />
           </div>
           <Menu.Item className='key' key="1">
-            <Link to="/userInformation">
+            <Link to="/recordStore">
               <span className='icon'><PlaySquareOutlined /></span>
               <div className='textnavbar'>kho bản ghi</div>
             </Link>
           </Menu.Item>
           <Menu.Item className='key' key="2">
-            <Link to="/navbar">
+            <Link to="/playlist">
               <span className='icon'><UnorderedListOutlined /></span>
               <div className='textnavbar1'>Playlist</div>
             </Link>
           </Menu.Item>
           <Menu.Item className='key' key="3">
-            <Link to="/navbar">
+            <Link to="#">
               <span className='icon'><ScheduleOutlined /></span>
-              <div className='textnavbar'> Lập lịch phát</div>
+              <div className='textnavbar1'> Lập lịch phát</div>
             </Link>
           </Menu.Item>
           <Menu.Item className='key' key="4">
@@ -50,21 +50,21 @@ const Sidebar = () => {
             </Link>
           </Menu.Item>
           <Menu.Item className='key' key="5">
-            <Link to="/navbar">
+            <Link to="#">
               <span className='icon'><FileProtectOutlined /></span>
               <div className='textnavbar'>Doanh thu</div>
             </Link>
           </Menu.Item>
           <Menu.Item className='key' key="6">
-            <Link to="/navbar">
+            <Link to="#">
               <span className='icon'><SettingOutlined /></span>
               <div className='textnavbar1'>Cài đặt</div>
             </Link>
           </Menu.Item>
-          <Menu.Item className='key' key="6">
-            <Link to="/navbar">
+          <Menu.Item className='key' key="7">
+            <Link to="#">
               <span className='icon'><QuestionCircleOutlined /></span>
-              <div className='textnavbar1'>Hỗ trợ</div>
+              <div className='textnavbar'>Hỗ trợ</div>
             </Link>
           </Menu.Item>
         </Menu>

@@ -5,7 +5,7 @@ import { Radio } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 
 import { RightOutlined, FormOutlined, ContainerOutlined, CloseOutlined, FileWordOutlined, FilePdfOutlined } from '@ant-design/icons';
-import { Modal, Button, Input, Select, Checkbox } from 'antd';
+import { Modal, Button, Input, Select, } from 'antd';
 import { Link } from 'react-router-dom';
 import { message } from 'antd';
 import { DatePicker } from 'antd';
@@ -91,12 +91,12 @@ const ContractEditing = () => {
                 <div className='contentdetail'>
                     <div className="containerdetail">
                         <div className="item item1">
-                            <p>Số hợp đồng: <input className='styleinputediting' type="text" name="" id="" /> </p>
-                            <p>Tên hợp đồng: <input className='styleinputediting' type="text" name="" id="" /> </p>
-                            <p>Ngày hiệu lực: <span className='styledetailtextedit'><DatePicker /></span></p>
-                            <p>Ngày hết hạn: <span className='styledetailtextedit'><DatePicker /></span></p>
+                            <p>Số hợp đồng: <input style={{marginLeft:"20px"}} className='styleinputediting' type="text" name="" id="" /> </p>
+                            <p>Tên hợp đồng: <input style={{marginLeft:"11px"}} className='styleinputediting' type="text" name="" id="" /> </p>
+                            <p>Ngày hiệu lực: <span style={{marginLeft:"14px"}} className='styledetailtextedit'><DatePicker /></span></p>
+                            <p>Ngày hết hạn: <span style={{marginLeft:"14px"}} className='styledetailtextedit'><DatePicker /></span></p>
 
-                            <p>Tình trạng: <span> <Select className='styledetailtext' defaultValue="Đang hiệu lực" style={{ width: 200 }} onChange={handleChange}>
+                            <p>Tình trạng:  <span> <Select  className='styledetailtext' defaultValue="Đang hiệu lực" style={{marginLeft:"35px",width:"220px"}} onChange={handleChange}>
                                 <Option value="hopdong1">Hợp đồng 1</Option>
                                 <Option value="hopdong2">Hợp đồng 2</Option>
                                 <Option value="hopdong3">Hợp đồng 3</Option>
@@ -105,69 +105,74 @@ const ContractEditing = () => {
                             </p>
                         </div>
                         <div className="item item2">
-                            <p>Đính kèm tệp:</p>
-                            <Flex gap={16}>
+                            
+                            <p style={{display:"flex"}}>Đính kèm tệp: <span style={{marginLeft:"10px"}}>   <Flex gap={8}>
                                 <Upload {...props}>
                                     <Button className='styledetailtextupload' icon={<UploadOutlined />}>Tải lên</Button>
                                 </Upload>
-                                <Upload {...props}>
-                                    <Button className='styledetailtextupload' icon={<UploadOutlined />}>Tải lên</Button>
-                                </Upload>
-                            </Flex>
+                               
+                            </Flex></span> </p>
+                         
                             <p style={{ marginLeft: "110px " }}><span style={{ color: "#ffff" }}> <FileWordOutlined /></span> <span className='styledetailtext'>hetthuongcannho.doc</span> <span style={{ color: "red" }}><CloseOutlined /></span><br />
                                 <span style={{ color: "#ffff" }}> <FilePdfOutlined /></span>   <span className='styledetailtext'>hetthuongcannho.doc</span> <span style={{ color: "red" }}><CloseOutlined /></span>
                             </p>
                         </div>
+                       
                         <div className="item item3">
                             <h4 style={{ color: "#FFAC69" }}> Mức nhuận bút</h4>
-                            <p>Quyền tác giả: <span className='styledetailtext'>0%</span></p>
+                            <p>Quyền tác giả: <span style={{marginLeft:"100px"}} className='styledetailtext'>0%</span></p>
                             <h4> Quyền liên quan:</h4>
                             <p>Quyền của người biểu diễn: <span className='styledetailtext'>50%</span></p>
-                            <p>Quyền của nhà sản xuất: <span className='styledetailtext'>50%</span></p>
+                            <p>Quyền của nhà sản xuất: <span style={{marginLeft:"20px"}} className='styledetailtext'>50%</span></p>
                             <p>(Bản ghi/video)</p>
                         </div>
                     </div>
+                    
                 </div>
+                
                 <div className='contentdetail2'>
-                    <hr style={{ width: "1790px", opacity: 0.5 }} />
+                <hr style={{ width:"99%", opacity: 0.5, marginTop:"-2%" }} />
+
                     <div className="container2">
+                        
                         <div className="item item1">
                             <h3 style={{ color: "#FFAC69" }}>Thông tin pháp nhân uỷ quyền</h3>
-                            <p>Pháp nhân uỷ quyền: <span className='checkboxediting'> <Radio><span style={{ color: '#ffff' }}>Cá nhân</span></Radio> <Radio><span style={{ color: '#ffff' }}>Tổ chức</span></Radio></span></p>
-                            <p>Tên người uỷ quyền:<input className='styleinputediting' type="text" name="" id="" /> </p>
-                            <p>Ngày sinh: <span className='styledetailtextedit'><DatePicker /></span></p>
-                            <p>Giới tính: Nam  <span className='checkboxediting'> <Radio><span style={{ color: '#ffff' }}>Nam</span></Radio> <Radio><span style={{ color: '#ffff' }}>Nữ</span></Radio></span></p>
-                            <p>Quốc tịch:  <span> <Select className='styledetailtext' defaultValue="Việt nam" style={{ width: 200 }} onChange={handleChange}>
+                            <p>Pháp nhân uỷ quyền: <span style={{marginLeft:"7px"}}  className='checkboxediting'> <Radio><span style={{ color: '#ffff', }}>Cá nhân</span></Radio> <Radio><span style={{ color: '#ffff' }}>Tổ chức</span></Radio></span></p>
+                            <p>Tên người uỷ quyền:<input style={{marginLeft:"14px"}} className='styleinputediting' type="text" name="" id="" /> </p>
+                            <p>Ngày sinh: <span style={{marginLeft:"83px"}} className='styledetailtextedit'><DatePicker /></span></p>
+                            <p>Giới tính:   <span style={{marginLeft:"90px"}} className='checkboxediting'> <Radio><span style={{ color: '#ffff' }}>Nam</span></Radio> <Radio><span style={{ color: '#ffff' }}>Nữ</span></Radio></span></p>
+                            <p>Quốc tịch:  <span style={{marginLeft:"83px"}}>  <Select className='styledetailtext' defaultValue="Việt nam" style={{ width: 200 }} onChange={handleChange}>
                                 <Option value="hopdong1">trung quốc</Option>
                                 <Option value="hopdong2">Thái lan</Option>
                                 <Option value="hopdong3">Mỹ</Option>
                             </Select></span></p>
-                            <p>Số điện thoại: <input className='styleinputediting' type="text" name="" id="" /> </p>
+                            <p>Số điện thoại: <input style={{marginLeft:"56px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                         </div>
                         <div className="item item2">
-                            <p>Số CMND/ CCCD: <input className='styleinputediting' type="text" name="" id="" /> </p>
-                            <p>Ngày cấp: <span className='styledetailtextedit'><DatePicker /></span></p>
-                            <p>Nơi cấp: <span className='styledetailtextedit'><DatePicker /></span></p>
+                            <p>Số CMND/ CCCD: <input style={{marginLeft:"25px"}} className='styleinputediting' type="text" name="" id="" /> </p>
+                            <p>Ngày cấp: <span style={{marginLeft:"80px"}} className='styledetailtextedit'><DatePicker /></span></p>
+                            <p>Nơi cấp: <span style={{marginLeft:"90px"}} className='styledetailtextedit'><DatePicker /></span></p>
 
-                            <p>Mã số thuế: <input className='styleinputediting' type="text" name="" id="" /> </p>
+                            <p>Mã số thuế: <input style={{marginLeft:"62px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                             <p>Nơi cư trú: 
                                   
                                     <TextArea
+                                    
                                         showCount
                                         maxLength={100}
                                         onChange={onChange}
                                         placeholder="69/53, Nguyễn Gia Trí,Phường 25,Quận Bình Thạnh,Thành phố Hồ Chí Minh  "
-                                        style={{ height: 80,width:250, resize: 'none' , }}
+                                        style={{ height: 80,width:250, resize: 'none' ,marginLeft:"75px " }}
                                     />
                                </p>
 
                         </div>
                         <div className="item item3">
-                            <p>Email:  <input className='styleinputediting' type="text" name="" id="" /> </p>
+                            <p>Email:  <input style={{marginLeft:"69px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                             <p>Tên đăng nhập:  <input className='styleinputediting' type="text" name="" id="" /> </p>
-                            <p>Mật khẩu:  <input className='styleinputediting' type="password" name="" id="" /> </p>
-                            <p>Số tài khoản: <input className='styleinputediting' type="text" name="" id="" /> </p>
-                            <p>Ngân hàng:  <input className='styleinputediting' type="text" name="" id="" /> </p>
+                            <p>Mật khẩu:  <input style={{marginLeft:"43px"}} className='styleinputediting' type="password" name="" id="" /> </p>
+                            <p>Số tài khoản: <input style={{marginLeft:"22px"}} className='styleinputediting' type="text" name="" id="" /> </p>
+                            <p>Ngân hàng:  <input style={{marginLeft:"32px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                         </div>
                     </div>
                 </div>
@@ -223,8 +228,15 @@ const ContractEditing = () => {
                         autoSize={{ minRows: 3, maxRows: 5 }}
                     />
                 </Modal>
+                
             </div>
+            <div className='stylebtnedit'>
+        <button className='btnedit1edit'> Hủy </button>
+        <button className='btneditedit'>Lưu</button>
+
+      </div>
         </div>
+        
     );
 }
 

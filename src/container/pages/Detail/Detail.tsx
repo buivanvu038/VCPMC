@@ -104,8 +104,6 @@ const Detail = () => {
     <p>Giới tính: Nam <span className='styledetailtext'>Nam</span></p>
     <p>Quốc tịch: Việt Nam <span className='styledetailtext'>Việt Nam</span></p>
     <p>Số điện thoại:  <span className='styledetailtext'>(+84) 345 678 901</span></p>
-
-
     </div>  
    <div className="item item2">
     <p>Số CMND/ CCCD:  <span className='styledetailtext'>10/07/2011</span></p>
@@ -150,8 +148,7 @@ Quận Bình Thạnh, <br /> Thành phố Hồ Chí Minh </span></p>
                              <CloseOutlined className='custom-icon' />
                         </div>
                         <div className='text'>Hủy hợp đồng</div>
-                    </div>
-                  
+                    </div>                 
                 </div>
                
                
@@ -196,5 +193,4 @@ Quận Bình Thạnh, <br /> Thành phố Hồ Chí Minh </span></p>
         </div>
     );
 }
-
 export default Detail;

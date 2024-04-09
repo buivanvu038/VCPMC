@@ -1,0 +1,43 @@
+.styleHr{
+    margin-left: 80px;
+    height: 1px; /* Đặt chiều cao của dòng ngang */
+    width:15%; /* Chiều rộng theo chiều ngang của trang */
+    border: none; /* Loại bỏ viền */
+    background-color: rgb(255, 255, 255); /* Màu sắc của dòng ngang */
+    transform: rotate(90deg); /* Xoay dòng ngang thành dạng dọc */
+    display: flex;
+   
+}
+.textlhd{
+    margin-left: 30%;
+    margin-top: -10%;
+    font-size: 14px;
+
+}
+.styleinputlhd{
+    background-color: #2B2B3F;
+    border-radius: 5px;
+    height: 30px;
+    width: 30%;
+    color: #ffff;
+    border-color: #ffffff;
+    justify-content: end;
+    flex-wrap: nowrap;
+
+}
+.textlhdfil{
+    opacity: 0.4;
+    margin-left: 30%;
+    margin-top: -10%;
+    font-size: 14px;
+    // border: none;
+    // border-color: #727288;
+    // justify-content: end;
+    // flex-wrap: nowrap;
+    // border: none;
+    
+}
+.stylebtneditaddcontrac{
+    margin-left: 46%;
+    margin-top: 19%;
+}

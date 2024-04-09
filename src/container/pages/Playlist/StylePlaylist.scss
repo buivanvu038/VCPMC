@@ -1,0 +1,32 @@
+.chude {
+    border: #727288 1px solid;
+    padding: 5px 10px; /* Thêm padding để tăng kích thước của div */
+    border-radius: 5px;
+    margin-right: 2px;
+    min-width: auto; /* Đặt min-width thành auto để div tự điều chỉnh kích thước dựa trên nội dung */
+}
+.stylechude{
+    display:flex;
+    margin-left: 20%;
+}
+.chudecard{
+    border: #727288 1px solid;
+    padding: 5px 10px; /* Thêm padding để tăng kích thước của div */
+    border-radius: 5px;
+    margin-right: 2px;
+    min-width: auto; /* Đặt min-width thành auto để div tự điều chỉnh kích thước dựa trên nội dung */
+    font-size: 12px;
+    color: #ffff;
+    opacity: 0.8;
+}
+.stylechudecard{
+    display:flex;
+    margin-right: -4%;
+
+}
+.thongtincard{
+    margin: 3px;
+    color: #ffff;
+    opacity: 0.7;
+    font-size: 12px;
+  }

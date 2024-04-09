@@ -12,6 +12,12 @@ import Detail from './pages/Detail/Detail';
 import Athority from './pages/Athority/Athority';
 import Editwork from './pages/Editwork/Editwork';
 import ContractEditing from './pages/ContractEditing/ContractEditing';
+import AddContract from './pages/AddContract/AddContract';
+import RecordStore from './pages/RecordStore/RecordStore';
+import UpdateInfor from './pages/UpdateInfor/UpdateInfor';
+import ApprovalManagement from './pages/ApprovalManagement/ApprovalManagement';
+import Playlist from './pages/Playlist/Playlist';
+import PlaylistDetails from './pages/PlaylistDetails/PlaylistDetails';
 
 
 
@@ -25,7 +31,6 @@ const DefaultLayout = () => {
           <Route path="/ForGotpass" element={<ForGotpass />} />
           <Route path="/passwordRecovery" element={<PasswordRecovery />} />
           <Route path="/disconnect" element={<Disconnect />} />
-
           <Route path="/resetPassword" element={<ResetPassword />} />
           <Route path="/navbar" element={<Navbar />} />
           <Route path="/userInformation" element={<UserInformation />} />
@@ -34,12 +39,14 @@ const DefaultLayout = () => {
           <Route path="/athority" element={<Athority />} />
           <Route path="/editwork" element={<Editwork />} />
           <Route path="/contractEditing" element={<ContractEditing />} />
+          <Route path="/addContract" element={<AddContract />} />
+          <Route path="/recordStore" element={<RecordStore />} />
+          <Route path="/updateInfor" element={<UpdateInfor />} />
+          <Route path='/approvalManagement' element={<ApprovalManagement/>}/>
+          <Route path='/playlist' element={<Playlist/>}/>
+          <Route path='/playlistDetails' element={<PlaylistDetails/>}/>
 
 
-
-
-
-     
 
         </Routes>
       </div>
