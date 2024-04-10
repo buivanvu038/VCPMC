@@ -60,7 +60,7 @@ const Playlist = () => {
                              <FormOutlined className='custom-icon' />
                         </div>
                       
-          <Link className='xemchitietatho' to="/approvalManagement">  <div className='text'>Thêm <br /> Playlist</div></Link>
+          <Link className='xemchitietatho' to="/addNewPlaylist">  <div className='text'>Thêm <br /> Playlist</div></Link>
                         
                     </div>
                 </div>

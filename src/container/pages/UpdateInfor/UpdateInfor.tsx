@@ -40,7 +40,7 @@ const UpdateInfor = () => {
           </p>
         </div>
                 <h1 className='textttcb'>Bản ghi - Mất em </h1>
-                <div className="container">
+                <div className="containerupdate">
       <div className="left-column">
         <div className="top-left-box"> <h3 className='textcenter1'>Thông tin bản ghi</h3>
         <div className='textcenter'>   <img className="imgbai1" src={bai1} alt="user" /></div>

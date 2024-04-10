@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Navbar from "../../../component/Navbar/Navbar";
-import { RightOutlined ,GlobalOutlined,RetweetOutlined,PauseCircleOutlined,RestOutlined,FormOutlined} from '@ant-design/icons';
+import { RightOutlined ,GlobalOutlined,RetweetOutlined,PauseCircleOutlined,RestOutlined,FormOutlined,MoreOutlined} from '@ant-design/icons';
 
 import { Link } from 'react-router-dom';
 import chitietplaylist from "../../../asset/chitietplaylist.jpg";
-import "./StylePlaylistDetails.scss"; // Make sure the correct path is provided
+import "./StyleEditPlaylist.scss"; // Make sure the correct path is provided
 
-const PlaylistDetails = () => {
+const EditPlaylist = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
@@ -44,29 +44,20 @@ const PlaylistDetails = () => {
         <div style={{display:"flex"}}>
             <div> 
               <div>
-                <div style={{display:"flex"}}>
-              <img className="imgplaylist" src={chitietplaylist} alt="user" />
-         
-                </div>
-              <div><h2 className='textimg'>Top ca khúc 2021</h2></div>
+           
+              <div style={{display:'flex'}}>    <img className="imgplaylist" src={chitietplaylist} alt="user" />    <div><MoreOutlined className='styleiconmusic' /></div></div>
+              <div><h2 className=''><input className='styleInputeditlist' type="text" /></h2></div>
               <hr style={{opacity:"0.5"}} />
               <div className='stylett'>Người tạo: <span style={{marginLeft:"60px"}}>Supper Admin</span></div>
               <div className='stylett'>Tổng số: <span style={{marginLeft:"74px"}}>8 bản ghi</span></div>
               <div className='stylett'>Tổng thời lượng:<span style={{marginLeft:"20px"}}>01:31:16</span></div>
               </div>
               <hr style={{opacity:"0.5"}} />
-              <div> <p className='styletital'>Lorem ipsum dolor sit amet,<br />
-                        consectetur adipiscing elit, sed <br />
-                        do eiusmod tempor incididunt <br />
-                         labore et dolore magna aliqua.</p></div>
+              <div> <div className='text'>Mô tả: </div> <div><input className='styleInputeditlist1' type="text" /></div> </div>
                          <hr style={{opacity:"0.5"}} />
+                         <div>Chủ đề:</div>
                          <div className='chude1'>
-                          <div><span className='stylecicle'>●</span>Chủ đề 1</div>
-                          <div> <span className='stylecicle'>●</span>Chủ đề 2</div>
-                          <div><span className='stylecicle'>●</span>Chủ đề 3</div>
-                          <div><span className='stylecicle'>●</span>Chủ đề 4</div>
-                          <div><span className='stylecicle'>●</span>Chủ đề 5</div>
-                          <div><span className='stylecicle'>●</span>Chủ đề 6</div>
+                         <div><input className='styleInputeditlist2' type="text" /></div> 
 
                          </div>
                          <hr style={{opacity:"0.5"}} />
@@ -295,8 +286,13 @@ const PlaylistDetails = () => {
     </table>
         </div>
       </div>
+      <div className='stylebtneditlist'>
+        <button className='btnedit1editlist'> Hủy </button>
+        <button className='btnediteditlist'>Lưu</button>
+
+      </div>
     </div>
   );
 };
 
-export default PlaylistDetails;
+export default EditPlaylist;

@@ -30,3 +30,15 @@
     opacity: 0.7;
     font-size: 12px;
   }
+  .xemchitiet{
+  color: #FF7506;
+  text-decoration:underline;
+  cursor: pointer; 
+}
+.xemchitiet:hover {
+  opacity: 0.7; /* Giảm độ trong suốt của hình ảnh khi hover */
+}
+
+.xemchitiet:active {
+  transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
+}

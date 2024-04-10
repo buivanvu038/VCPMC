@@ -1,0 +1,72 @@
+.styleInputadd {
+    height: 40px;
+    width: 260px;
+    border-radius: 10px;
+    background-color: #2B2B3F !important;
+    color: #ffff;
+    font-size: 18px;
+    border-color: #d4d4f5;
+}
+.styleInputadd1 {
+    height: 80px;
+    width: 260px;
+    border-radius: 10px;
+    background-color: #2B2B3F !important;
+    color: #ffff;
+    font-size: 18px;
+    border-color: #d4d4f5;
+}
+
+.stylebtnadd{
+    margin-left: 46%;
+   margin-top: 90px
+  }
+  
+.btneditadd{
+    height: 30px;
+    width: 10%;
+    background-color: #FF7506;
+    border: none;
+    margin-left: 20px;
+    color: #ffff;
+    border-radius: 6px;
+  }
+  .btnedit1add{
+    height: 30px;
+    width: 10%;
+    background-color: #2B2B3F;
+    border: none;
+    color: #FF7506;
+    border-color: #FF7506;
+    border-radius: 6px;
+  
+  }
+  .btneditadd{
+    cursor: pointer; /* Thay đổi con trỏ thành dạng bấm được khi hover */
+  }
+    .btneditadd:hover {
+      opacity: 0.7; /* Giảm độ trong suốt của hình ảnh khi hover */
+  }
+  .btnedit:active {
+      transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
+  }
+  .btnedit1add{
+    cursor: pointer; /* Thay đổi con trỏ thành dạng bấm được khi hover */
+  }
+    .btnedit1add:hover {
+      opacity: 0.7; /* Giảm độ trong suốt của hình ảnh khi hover */
+  }
+  .btnedit1add:active {
+      transform: scale(0.95); /* Giảm kích thước hình ảnh khi đang được nhấn */
+  }
+  .stylebtnadd{
+    margin-left: 46%;
+   margin-top: 20px
+  }
+
+
+
+
+
+
+

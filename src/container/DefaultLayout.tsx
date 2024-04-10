@@ -18,6 +18,9 @@ import UpdateInfor from './pages/UpdateInfor/UpdateInfor';
 import ApprovalManagement from './pages/ApprovalManagement/ApprovalManagement';
 import Playlist from './pages/Playlist/Playlist';
 import PlaylistDetails from './pages/PlaylistDetails/PlaylistDetails';
+import EditPlaylist from './pages/EditPlaylist/EditPlaylist';
+import AddNewPlaylist from './pages/AddNewPlaylist/AddNewPlaylist';
+import AddToPlaylist from './pages/AddToPlaylist/AddToPlaylist';
 
 
 
@@ -45,6 +48,12 @@ const DefaultLayout = () => {
           <Route path='/approvalManagement' element={<ApprovalManagement/>}/>
           <Route path='/playlist' element={<Playlist/>}/>
           <Route path='/playlistDetails' element={<PlaylistDetails/>}/>
+          <Route path='/editPlaylist' element={<EditPlaylist/>}/>
+          <Route path='/addNewPlaylist' element={<AddNewPlaylist/>}/>
+          <Route path='/addToPlaylist' element={<AddToPlaylist/>}/>
+
+
+
 
 
 
