@@ -1,0 +1,240 @@
+.contaitableaddto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Chia cột thành hai phần bằng nhau */
+  
+    margin: 20px auto;
+    width: 80%; /* Độ rộng của grid */
+    margin-left: 14%;
+  }
+
+//   .table1,
+//   .table2 {
+    
+ 
+//   }
+  
+
+  
+  .styletable2 {
+    height: 700px;
+    width: 700px;
+    background-color: #2F2F41; /* Màu nền */
+  }
+  
+  .styletable1 {
+    padding: 5px;
+    height: 700px;
+    width: 700px;
+    background-color: #2F2F41; /* Màu nền */
+  }
+
+
+  .dropdownaddto {
+    margin-top: -4%;
+    margin-left: 12%;
+    margin-right: 65%;
+    border: 2px solid #B65100; /* Thêm đường viền 2px với màu #B65100 */
+    border-radius: 9px;
+  }
+  
+  .dropdowncontentaddto {
+    background-color: #2F2F41;
+    color: #ffffff;
+  }
+  .quyensohuuaddto{
+    margin-top: 5%;
+    color: #ffffff;
+    margin-left: 8px;
+  }
+  
+.styledropdown1{
+    margin-left: 45%;
+    margin-top: -8%;
+}
+
+.dropdownaddto1 {
+    margin-top: -7%;
+    margin-left: 23%;
+    margin-right: 31%;
+    border: 2px solid #B65100; /* Thêm đường viền 2px với màu #B65100 */
+    border-radius: 9px;
+  }
+  
+  .dropdowncontentaddto1 {
+    background-color: #2F2F41;
+    color: #ffffff;
+  }
+  .quyensohuuaddto1{
+    margin-top: 6%;
+    color: #ffffff;
+    margin-left: -5%;
+  }
+  .wrapeditaddto{
+    width: 50%;
+    border-radius: 10px;
+    position: absolute;
+    top: 14%;
+    left: 30%;
+    background-color: #2B2B3F !important;
+    height: 5%;
+    width: 30%;
+    transform: translate(-50%, -50%);
+  }
+  .styletableaddto{
+    background-color: #2B2B3F;
+    margin: 20px;
+  }
+  .styletheadaddto{
+    margin: 30%;
+  }
+  .custom-tableplaylistaddto {
+    border-collapse: collapse;
+    width: 110%;
+    background-color: #2F2F41;
+    border-radius: 10px;
+    margin-top: 3%;
+   
+  }
+  
+  .custom-tableplaylistaddto th, .custom-tableplaylistaddto td {
+  
+    padding: 8px;
+    
+  }
+  .custom-tableplaylistaddto .table-divideraddto td {
+    border-top: 1px solid rgb(255, 255, 255); // Đường kẻ dài ngang bảng
+    opacity: 0.5;
+    color: #ffff;
+    
+  }
+  .colortital{
+    color: #FFAC69;
+  }
+
+  .searchaddto {
+    width: 100%;
+    position: relative;
+    display: flex;
+   
+  }
+
+  .custom-tableplaylistaddto1 {
+    border-collapse: collapse;
+    width: 180%;
+    background-color: #2F2F41;
+    border-radius: 10px;
+    margin-top: 25%;
+   margin-left: -85%;
+  }
+  
+  .custom-tableplaylistaddto1 th, .custom-tableplaylistaddto1 td {
+  
+    padding: 8px;
+    
+  }
+  .custom-tableplaylistaddto1 .table-divideraddto1 td {
+    border-top: 1px solid rgb(255, 255, 255); // Đường kẻ dài ngang bảng
+    opacity: 0.5;
+    color: #ffff;
+    
+  }
+  .colortital1{
+    color: #FFAC69;
+
+  }
+
+
+
+  .styletheadaddto1{
+    margin: 10%;
+  }
+  .text2{
+    color: #ffff;
+    margin: 20px;
+  }
+  .style2addto {
+    display: flex;
+   margin: 20px;
+   font-size: 13px;
+  }
+  .tong1{
+    display: flex;
+    margin-right: 40%;
+    color: #fff;
+
+  }
+
+  .tong2{
+    display: flex;
+    color: #fff;
+
+  }
+.styletongso{
+    color: #fff;
+    opacity: 0.5;
+    margin-left: 20px;
+    
+}
+.searchButtonaddto {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #2B2B3F;
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px ;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #2B2B3F !important;
+  
+  }
+
+  .wrapaddto{
+    width: 30%;
+    border-radius: 10px;
+    position: absolute;
+    top: 33%;
+    left: 70%;
+    background-color: #2B2B3F !important;
+  
+    height: 5%;
+  width: 30%;
+    transform: translate(-50%, -50%);
+  }
+  .searchaddto {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTermaddto {
+    width: 100%;
+    border: 3px solid #2B2B3F;
+    border-right: none;
+    padding: 5px;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+    color: #9DBFAF;
+    background-color: #2B2B3F !important;
+  
+  }
+  
+  .searchTermaddto:focus{
+    color: #ffff;
+    background-color: #2B2B3F !important;
+  
+  }
+  
+  .searchButtonaddto {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #2B2B3F;
+    background: #0404d1;
+    text-align: center;
+    color: #ffff;
+    border-radius: 10px ;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #2B2B3F !important;
+  
+  }

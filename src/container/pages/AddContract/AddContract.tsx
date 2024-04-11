@@ -3,22 +3,15 @@ import Navbar from "../../../component/Navbar/Navbar";
 import "./StyleAddContract.scss";
 import { Radio } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
-
 import { RightOutlined, CloseOutlined, FileWordOutlined, FilePdfOutlined } from '@ant-design/icons';
 import { Modal, Button, Input, Select, } from 'antd';
-
 import { message } from 'antd';
 import { DatePicker } from 'antd';
-
 import { Upload } from 'antd';
 import { Flex } from 'antd';
-
-
-
 const onChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     console.log('Change:', e.target.value);
 };
-
 const { TextArea } = Input;
 const { Option } = Select;
 const props = {
@@ -29,8 +22,6 @@ const props = {
         }
     }
 };
-
-
 const AddContract = () => {
     const [changePasswordVisible, setChangePasswordVisible] = useState(false);
     const [value, setValue] = useState('');
@@ -57,7 +48,6 @@ const AddContract = () => {
     const handleChange = (value: string) => {
         setSelectedValue(value);
     }
-
     return (
         <div className='styleuseraa'>
             <Navbar />
@@ -67,9 +57,7 @@ const AddContract = () => {
                         quản lý <span className='iconright'><RightOutlined /></span> Quản lý hợp đồng <span className='iconright'><RightOutlined /></span> Thêm hợp đồng mới
                     </p>
                 </div>
-                <h1 className='textttcb'>Thêm hợp đồng khai thác mới</h1>
-
-               
+                <h1 className='textttcb'>Thêm hợp đồng khai thác mới</h1>      
             </div>
             <div>
                 <div style={{marginTop:"-1%"}} className='contentdetail'>
@@ -78,24 +66,18 @@ const AddContract = () => {
                             <p>Tên hợp đồng: <input style={{marginLeft:"20px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                             <p>Số hợp đồng: <input style={{marginLeft:"28px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                             <p>Ngày hiệu lực: <span style={{marginLeft:"20px"}} className='styledetailtextedit'><DatePicker /></span></p>
-                            <p>Ngày hết hạn: <span style={{marginLeft:"20px"}} className='styledetailtextedit'><DatePicker /></span></p>
-
-                          
+                            <p>Ngày hết hạn: <span style={{marginLeft:"20px"}} className='styledetailtextedit'><DatePicker /></span></p>   
                         </div>
-                        <div className="item item2">
-                            
+                        <div className="item item2">          
                             <p style={{display:"flex"}}>Đính kèm tệp: <span style={{marginLeft:"10px"}}>   <Flex gap={8}>
                                 <Upload {...props}>
                                     <Button className='styledetailtextupload' icon={<UploadOutlined />}>Tải lên</Button>
-                                </Upload>
-                               
-                            </Flex></span> </p>
-                         
+                                </Upload>                              
+                            </Flex></span> </p>                       
                             <p style={{ marginLeft: "110px " }}><span style={{ color: "#ffff" }}> <FileWordOutlined /></span> <span className='styledetailtext'>hetthuongcannho.doc</span> <span style={{ color: "red" }}><CloseOutlined /></span><br />
                                 <span style={{ color: "#ffff" }}> <FilePdfOutlined /></span>   <span className='styledetailtext'>hetthuongcannho.doc</span> <span style={{ color: "red" }}><CloseOutlined /></span>
                             </p>
-                        </div>
-                       
+                        </div>                     
                         <div className="item item3">
                             <h4>Loại hợp đồng</h4>
                             <div > <Radio>Radio</Radio> <hr className='styleHr' /></div>
@@ -109,22 +91,14 @@ const AddContract = () => {
                             </div>
                             <div style={{marginTop:"10%"}} >
                             <div  className='textlhdfil' >Giá trị Luợt phát   <input className='styleinputlhd' type="text" name="" id="" /> <br />(NVĐ) </div> 
-                          
-                            </div>
-                          
+                            </div>     
                             <div style={{marginTop:"-40px"}}> <Radio>Radio</Radio></div>
-
                         </div>
                     </div>
-                    
                 </div>
-                
                 <div className='contentdetail2'>
-             
                     <div className="container2">
-                        
-                        <div className="item item1">
-                           
+                        <div className="item item1">  
                             <p>Tên đơn vị sự dụng: <input style={{marginLeft:"14px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                             <p>Người đại diện:<input style={{marginLeft:"50px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                             <p>Chức vụ: <input style={{marginLeft:"95px"}} className='styleinputediting' type="text" name="" id="" /> </p>
@@ -136,7 +110,6 @@ const AddContract = () => {
                             </Select></span></p>
                             <p>Số điện thoại: <input style={{marginLeft:"56px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                             <p>Email: <input style={{marginLeft:"111px"}} className='styleinputediting' type="Email" name="" id="" /> </p>
-
                         </div>
                         <div className="item item2">
                             <p>Giới tính: <span style={{marginLeft:"7px"}}  className='checkboxediting'> <Radio><span style={{ color: '#ffff', }}>Nam</span></Radio> <Radio><span style={{ color: '#ffff' }}>Nữ</span></Radio></span></p>
@@ -146,10 +119,8 @@ const AddContract = () => {
 
                             <p>Mã số thuế: <input style={{marginLeft:"73px"}} className='styleinputediting' type="text" name="" id="" /> </p>
                             <p>Nơi cư trú:<input style={{marginLeft:"85px"}} className='styleinputediting' type="text" name="" id="" /> </p>
-
                         </div>
                         <div className="item item3">
-                          
                             <p>Tên đăng nhập:  <input className='styleinputediting' type="text" name="" id="" /> </p>
                             <p>Mật khẩu:  <input style={{marginLeft:"43px"}} className='styleinputediting' type="password" name="" id="" /> </p>
                             <p>Số tài khoản: <input style={{marginLeft:"22px"}} className='styleinputediting' type="text" name="" id="" /> </p>
@@ -158,7 +129,6 @@ const AddContract = () => {
                     </div>
                 </div>
             </div>
-            
             <div className='custom-modal'>
                 <Modal
                     styles={{
@@ -187,16 +157,13 @@ const AddContract = () => {
                         placeholder="Cho chúng tôi biết lý do bạn muốn huỷ hợp đồng uỷ quyền này..."
                         autoSize={{ minRows: 3, maxRows: 5 }}
                     />
-                </Modal>
-                
+                </Modal>   
             </div>
             <div className='stylebtneditaddcontrac'>
         <button className='btnedit1edit'> Hủy </button>
         <button className='btneditedit'>Lưu</button>
-
       </div>
         </div>
-        
     );
 }
 

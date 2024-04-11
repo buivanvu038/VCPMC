@@ -1,0 +1,29 @@
+.stylemodel1{
+    display: flex;
+   
+}
+.stylemodel2{
+    display: flex;
+    margin-top: 20px;
+    
+}
+.stylemodel2  > div{
+   margin-right: 15px;
+   color: #ffff;
+
+}.stylemodel1  > div{
+    margin-right: 15px;
+    color: #ffff;
+ }
+ .styleinputtime{
+    height: 30px;
+    width: 35px;
+    border: #727288 1px solid;
+    background-color: #2B2B3F  ;
+    border-radius: 5px;
+    color: #fff;
+ }
+ .styletimedate > input{
+    margin: 3px;
+
+ }

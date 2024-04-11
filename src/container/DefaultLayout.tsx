@@ -21,6 +21,10 @@ import PlaylistDetails from './pages/PlaylistDetails/PlaylistDetails';
 import EditPlaylist from './pages/EditPlaylist/EditPlaylist';
 import AddNewPlaylist from './pages/AddNewPlaylist/AddNewPlaylist';
 import AddToPlaylist from './pages/AddToPlaylist/AddToPlaylist';
+import ScheduleList from './pages/ScheduleList/ScheduleList';
+import AddRecord from './pages/AddRecord/AddRecord';
+import DetailedSchedule from './pages/DetailedSchedule/DetailedSchedule';
+import EditBroadcastSchedule from './pages/EditBroadcastSchedule/EditBroadcastSchedule';
 
 
 
@@ -51,10 +55,10 @@ const DefaultLayout = () => {
           <Route path='/editPlaylist' element={<EditPlaylist/>}/>
           <Route path='/addNewPlaylist' element={<AddNewPlaylist/>}/>
           <Route path='/addToPlaylist' element={<AddToPlaylist/>}/>
-
-
-
-
+          <Route path='/addRecord' element={<AddRecord/>}/>
+          <Route path='/scheduleList' element={<ScheduleList/>}/>
+          <Route path='/detailedSchedule' element={<DetailedSchedule/>}/>
+          <Route path='/editBroadcastSchedule' element={<EditBroadcastSchedule/>}/>
 
 
         </Routes>

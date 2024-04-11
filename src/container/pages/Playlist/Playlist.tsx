@@ -37,7 +37,7 @@ const Playlist = () => {
       <Navbar/>
       <div className='containerinfor'>
       <div>
-  <h1 style={{ color: "#ffffff", fontWeight: "bold", fontFamily: "Arial, sans-serif" ,marginTop:"-5px" }}>Kho bản ghi</h1>
+  <h1 style={{ color: "#ffffff", fontWeight: "bold", fontFamily: "Arial, sans-serif" ,marginTop:"-5px" }}>Play List</h1>
 </div>
 
 

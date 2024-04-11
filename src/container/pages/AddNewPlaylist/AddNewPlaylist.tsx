@@ -155,7 +155,14 @@ const props = {
               <td>{record.name}</td>
               <td>{record.singer}</td>
               <td>{record.author}</td>
+              <td >
+          <Link className='xemchitiet' to="/playlistDetails">Nghe</Link>
+          </td>
+          <td >
+          <Link className='xemchitiet' to="/playlistDetails">Gõ</Link>
+          </td>
             </tr>
+            
           ))}
          
       </tbody>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { SearchOutlined, RightOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
-import "./StyleAddToPlaylist.scss"; // Đảm bảo đường dẫn đúng được cung cấp
+import "./StyleAddRecord.scss"; // Đảm bảo đường dẫn đúng được cung cấp
 import Navbar from "../../../component/Navbar/Navbar";
 
 
@@ -23,7 +23,7 @@ const initialRecords: Record[] = [
 
 const RecordsPerPage = 5; // Số bản ghi hiển thị trên mỗi trang
 
-const AddToPlaylist: React.FC = () => {
+const AddRecord: React.FC = () => {
   const [newRecord, setNewRecord] = useState<Record>({ id: 0, name: '', singer: '', author: '' });
   const [records, setRecords] = useState<Record[]>(initialRecords);
   const [currentPage, setCurrentPage] = useState(1);
@@ -189,11 +189,11 @@ const AddToPlaylist: React.FC = () => {
       </div>
       <div style={{marginTop:"2%", marginLeft:"46%"}} className='stylebtnadd'>
         <button className='btnedit1add'> Hủy </button>
-        <button onClick={handleAddRecord} className='btneditadd'>Lưu</button>
+        <button  className='btneditadd'>Lưu</button>
 
       </div>
     </div>
   );
 };
 
-export default AddToPlaylist;
+export default AddRecord;

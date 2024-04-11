@@ -38,7 +38,7 @@ const Sidebar = () => {
             </Link>
           </Menu.Item>
           <Menu.Item className='key' key="3">
-            <Link to="#">
+            <Link to="/scheduleList">
               <span className='icon'><ScheduleOutlined /></span>
               <div className='textnavbar1'> Lập lịch phát</div>
             </Link>

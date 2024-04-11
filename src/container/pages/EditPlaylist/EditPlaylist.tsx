@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import Navbar from "../../../component/Navbar/Navbar";
-import { RightOutlined ,GlobalOutlined,RetweetOutlined,PauseCircleOutlined,RestOutlined,FormOutlined,MoreOutlined} from '@ant-design/icons';
+import { RightOutlined ,GlobalOutlined,RetweetOutlined,PauseCircleOutlined,RestOutlined,PlusCircleOutlined,MoreOutlined} from '@ant-design/icons';
 
 import { Link } from 'react-router-dom';
 import chitietplaylist from "../../../asset/chitietplaylist.jpg";
 import "./StyleEditPlaylist.scss"; // Make sure the correct path is provided
-
+import { Switch } from 'antd';
 const EditPlaylist = () => {
+  const onChange = (checked: boolean) => {
+    console.log(`switch to ${checked}`);
+  };
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
@@ -27,21 +30,15 @@ const EditPlaylist = () => {
         <div>  <div className='StyleSettingcontrac'>
                     <div className='styleSetcontrac'>
                         <div className='styleiconcontrac'>
-                             <FormOutlined  className='custom-icon' />
+                             <PlusCircleOutlined  className='custom-icon' />
                         </div>
-                        <div className='text'>  <Link className='styletabs' to="/editPlaylist">Chỉnh sửa</Link></div>
+                        <div className='text'>  <Link className='styletabs' to="/addRecord">Thêm bản ghi</Link></div>
                         
                     </div>  
-                    <div className='styleSetcontrac'>
-                        <div className='styleiconcontrac'>
-                             <RestOutlined className='custom-iconx' />
-                        </div>
-                        <div className='text'>  <Link className='styletabs' to="#">Xóa playlist</Link></div>
-                        
-                    </div> 
+                 
                 </div>
                 </div>
-        <div style={{display:"flex"}}>
+        <div style={{display:"flex" , marginTop:"-33px"}}>
             <div> 
               <div>
            
@@ -55,16 +52,15 @@ const EditPlaylist = () => {
               <hr style={{opacity:"0.5"}} />
               <div> <div className='text'>Mô tả: </div> <div><input className='styleInputeditlist1' type="text" /></div> </div>
                          <hr style={{opacity:"0.5"}} />
-                         <div>Chủ đề:</div>
+                         <div className='text'>Chủ đề:</div>
                          <div className='chude1'>
                          <div><input className='styleInputeditlist2' type="text" /></div> 
 
                          </div>
                          <hr style={{opacity:"0.5"}} />
-                          <div className='stylefinal'>
-                            <div><span><GlobalOutlined /></span> Hiện thị ở chế độ công khai</div>
-                            <div><span><PauseCircleOutlined /></span> Phát ngẫu nhiên</div>
-                            <div> <span><RetweetOutlined /></span> Lặp lại</div>
+                         <div className='stylefinal'>
+                            <div><span style={{marginRight:"10px"}}> <Switch defaultChecked onChange={onChange} /></span > Chế độ công khai</div>
+                       
                           </div>
             </div>
         <table style={{marginLeft:"3%"}} className="custom-tableplaylist">
@@ -84,10 +80,10 @@ const EditPlaylist = () => {
           <td>Hợp đồng uỷ quyền bài hát</td>
           <td>Vương Anh Tú</td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
           </td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
           </td>
          
 
@@ -101,10 +97,10 @@ const EditPlaylist = () => {
           <td>Hợp đồng uỷ quyền bài hát</td>
           <td>Vương Anh Tú</td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
           </td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
           </td>
         </tr>
         <tr className="table-divider">
@@ -119,27 +115,10 @@ const EditPlaylist = () => {
           <td>Hợp đồng uỷ quyền bài hát</td>
           <td>Vương Anh Tú</td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
           </td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
-          </td>
-         
-
-        </tr>
-        <tr className="table-divider">
-  <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
-</tr>
-<tr>
-          <td>1</td>
-          <td>HD123</td>
-          <td>Hợp đồng uỷ quyền bài hát</td>
-          <td>Vương Anh Tú</td>
-          <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
-          </td>
-          <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
           </td>
          
 
@@ -153,27 +132,10 @@ const EditPlaylist = () => {
           <td>Hợp đồng uỷ quyền bài hát</td>
           <td>Vương Anh Tú</td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
           </td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
-          </td>
-         
-
-        </tr>
-        <tr className="table-divider">
-  <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
-</tr>
-<tr>
-          <td>1</td>
-          <td>HD123</td>
-          <td>Hợp đồng uỷ quyền bài hát</td>
-          <td>Vương Anh Tú</td>
-          <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
-          </td>
-          <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
           </td>
          
 
@@ -187,27 +149,10 @@ const EditPlaylist = () => {
           <td>Hợp đồng uỷ quyền bài hát</td>
           <td>Vương Anh Tú</td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
           </td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
-          </td>
-         
-
-        </tr>
-        <tr className="table-divider">
-  <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
-</tr>
-<tr>
-          <td>1</td>
-          <td>HD123</td>
-          <td>Hợp đồng uỷ quyền bài hát</td>
-          <td>Vương Anh Tú</td>
-          <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
-          </td>
-          <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
           </td>
          
 
@@ -221,27 +166,10 @@ const EditPlaylist = () => {
           <td>Hợp đồng uỷ quyền bài hát</td>
           <td>Vương Anh Tú</td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
           </td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
-          </td>
-         
-
-        </tr>
-        <tr className="table-divider">
-  <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
-</tr>
-<tr>
-          <td>1</td>
-          <td>HD123</td>
-          <td>Hợp đồng uỷ quyền bài hát</td>
-          <td>Vương Anh Tú</td>
-          <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
-          </td>
-          <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
           </td>
          
 
@@ -255,10 +183,10 @@ const EditPlaylist = () => {
           <td>Hợp đồng uỷ quyền bài hát</td>
           <td>Vương Anh Tú</td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
           </td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
           </td>
          
 
@@ -272,10 +200,78 @@ const EditPlaylist = () => {
           <td>Hợp đồng uỷ quyền bài hát</td>
           <td>Vương Anh Tú</td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
           </td>
           <td >
-          <Link className='xemchitiet' to="/Detail">Xem chi tiết</Link>
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
+          </td>
+         
+
+        </tr>
+        <tr className="table-divider">
+  <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
+</tr>
+<tr>
+          <td>1</td>
+          <td>HD123</td>
+          <td>Hợp đồng uỷ quyền bài hát</td>
+          <td>Vương Anh Tú</td>
+          <td >
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
+          </td>
+          <td >
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
+          </td>
+         
+
+        </tr>
+        <tr className="table-divider">
+  <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
+</tr>
+<tr>
+          <td>1</td>
+          <td>HD123</td>
+          <td>Hợp đồng uỷ quyền bài hát</td>
+          <td>Vương Anh Tú</td>
+          <td >
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
+          </td>
+          <td >
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
+          </td>
+         
+
+        </tr>
+        <tr className="table-divider">
+  <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
+</tr>
+<tr>
+          <td>1</td>
+          <td>HD123</td>
+          <td>Hợp đồng uỷ quyền bài hát</td>
+          <td>Vương Anh Tú</td>
+          <td >
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
+          </td>
+          <td >
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
+          </td>
+         
+
+        </tr>
+        <tr className="table-divider">
+  <td colSpan={8}></td> {/* Sử dụng kiểu số cho colSpan */}
+</tr>
+<tr>
+          <td>1</td>
+          <td>HD123</td>
+          <td>Hợp đồng uỷ quyền bài hát</td>
+          <td>Vương Anh Tú</td>
+          <td >
+          <Link className='xemchitiet' to="/Detail">Nghe</Link>
+          </td>
+          <td >
+          <Link className='xemchitiet' to="/Detail">Gỡ</Link>
           </td>
          
 
@@ -286,9 +282,9 @@ const EditPlaylist = () => {
     </table>
         </div>
       </div>
-      <div className='stylebtneditlist'>
-        <button className='btnedit1editlist'> Hủy </button>
-        <button className='btnediteditlist'>Lưu</button>
+      <div className='stylebtneditaddcontrac11'>
+        <button className='btnedit1edit'> Hủy </button>
+        <button className='btneditedit'>Lưu</button>
 
       </div>
     </div>
